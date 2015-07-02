@@ -1,3 +1,5 @@
+" xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'  " change caps to esc on fedora
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
