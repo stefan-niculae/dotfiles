@@ -1,18 +1,57 @@
-" xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'  " change caps to esc on fedora
+" TODO
+" :noh automatically after finished searching
+" copy from vim into system clipboard
+" make <enter> insert newline in command mode
+" <backspace> to delete in command mode
+" delete newlines in command mode
+" vimaweseome.com plugins
+
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+
+" vim interferes with vundle
+filetype off
+
+" vundle setup
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" This is the Vundle package, which can be found on GitHub.
+" For GitHub repos, you specify plugins using the
+" " 'user/repository' format
+Plugin 'gmarik/vundle'
+
+" We could also add repositories with a ".git" extension
+Plugin 'scrooloose/nerdtree.git'
+
+" To get plugins from Vim Scripts, you can reference the plugin
+" by name as it appears on the site
+Plugin 'Buffergator'
+
+Plugin 'Syntastic'
+
+" Now we can turn our filetype functionality back on
+filetype plugin indent on
+
+
+
+
+" make capslock act as esc (to go back into command mode)
+silent !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
-set ruler		" show the cursor position all the time
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
 endif
+
+" show the cursor position all the time
+set ruler		
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -21,7 +60,6 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-set autoindent		" always set autoindenting on
 
 " enable syntax highlighting
 syntax enable
