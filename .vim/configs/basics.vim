@@ -5,7 +5,6 @@
 " backspace in insert mode works like normal editor
 set backspace=2
 
-
 " show matching pair for () [] {}
 set showmatch
 
@@ -13,7 +12,8 @@ set showmatch
 filetype indent on
 
 " auto indenting
-set autoindent
+" TODO: fix autoindent
+"set autoindent
 
 " line numbers
 set number
@@ -23,5 +23,9 @@ if has('mouse')
     set mouse=a
 endif
 
-set clipboard=unnamed
+" doesn't work...
+set clipboard=unnamedplus
+
+" leader is space
+let mapleader=" "
 

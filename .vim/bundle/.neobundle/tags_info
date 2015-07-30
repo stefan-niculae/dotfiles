@@ -1,2 +1,5 @@
 neobundle.vim
+nerdcommenter
+nerdtree
 vim-airline
+vim-surround

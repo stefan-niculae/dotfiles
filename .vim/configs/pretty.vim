@@ -2,12 +2,13 @@
 " find cooler font
 " find nicer colorscheme
 " fix font for airline https://github.com/bling/vim-airline/wiki/FAQ
+" make lowercase todo and fixme also be highlighted
 
 " syntax highlighting
 syntax on
 
 " color scheme
-colorscheme wasabi256
+colorscheme onedark
 
 " 256 colors
 set t_Co=256

@@ -11,8 +11,11 @@
  NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
-" NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'scrooloose/nerdtree'
+" NeoBundle 'scrooloose/syntastic'
+NeoBundle 'scrooloose/nerdcommenter'
 
 " You can specify revision/branch/tag.
 " NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }

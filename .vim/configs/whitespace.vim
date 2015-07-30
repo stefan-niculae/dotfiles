@@ -10,11 +10,20 @@ set softtabstop=4
 " expand tabs into spaces
 set expandtab
 
-" show trailing whitespace
-" TODO make these small dots
-highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
+" show tabs and trailing whitespace
+set list
+set listchars=tab:▸\ ,trail:·
+
+" removes trailing whitespace
+function! TrimWhiteSpace()
+            %s/\s\+$//e
+endfunction
+nnoremap <silent> <Leader>rts :call TrimWhiteSpace()<CR>
+
+" trims whitespace on save
+autocmd FileWritePre    * :call TrimWhiteSpace()
+autocmd FileAppendPre   * :call TrimWhiteSpace()
+autocmd FilterWritePre  * :call TrimWhiteSpace()
+autocmd BufWritePre     * :call TrimWhiteSpace()
+
+set endofline
