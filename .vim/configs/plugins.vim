@@ -46,4 +46,3 @@ let g:syntastic_check_on_wq = 0
 " Rainbow
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
 
-call neobundle#end()
