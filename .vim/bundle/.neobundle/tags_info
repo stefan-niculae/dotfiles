@@ -1,5 +1,11 @@
+YouCompleteMe
+ctrlp.vim
+delimitMate
 neobundle.vim
 nerdcommenter
 nerdtree
+rainbow
+syntastic
 vim-airline
+vim-fugitive
 vim-surround

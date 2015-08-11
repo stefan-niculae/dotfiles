@@ -14,11 +14,14 @@ nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 
+" leader is space
+let mapleader = "\<Space>"
+
 " workdir tree
 nnoremap <C-e> :NERDTreeToggle<CR>
 
 " toggle comments
-"nnoremap <C-b> <leader>c<leader>
+nnoremap <C-b> <leader>c<leader>
 
 " disable auto indentation on paste
 command Paste execute 'set paste | insert | set nopaste'
