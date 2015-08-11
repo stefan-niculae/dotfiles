@@ -14,6 +14,7 @@
 NeoBundle 'bling/vim-airline'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/nerdtree'
+<<<<<<< HEAD
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'ctrlpvim/ctrlp.vim'
@@ -46,3 +47,19 @@ let g:syntastic_check_on_wq = 0
 " rainbow
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
 
+=======
+" NeoBundle 'scrooloose/syntastic'
+NeoBundle 'scrooloose/nerdcommenter'
+
+" You can specify revision/branch/tag.
+" NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+
+ call neobundle#end()
+
+ filetype plugin indent on
+
+ " If there are uninstalled bundles found on startup,
+ " this will conveniently prompt you to install them.
+ NeoBundleCheck
+>>>>>>> dfee27312b07f8aeff8de3df1b2b7800534eb019
