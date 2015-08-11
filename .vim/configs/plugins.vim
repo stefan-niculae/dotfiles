@@ -1,20 +1,19 @@
- " Note: Skip initialization for vim-tiny or vim-small.
- if 0 | endif
+" Note: Skip initialization for vim-tiny or vim-small.
+if 0 | endif
 
- if has('vim_starting')
-   set runtimepath+=~/.vim/bundle/neobundle.vim/
- endif
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
- call neobundle#begin(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
- " Let NeoBundle manage NeoBundle
- NeoBundleFetch 'Shougo/neobundle.vim'
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
 NeoBundle 'bling/vim-airline'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/nerdtree'
-<<<<<<< HEAD
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'ctrlpvim/ctrlp.vim'
@@ -25,7 +24,7 @@ NeoBundle 'Valloric/YouCompleteMe'
 
 call neobundle#end()
 
- filetype plugin indent on
+filetype plugin indent on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
@@ -44,22 +43,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" rainbow
+" Rainbow
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
 
-=======
-" NeoBundle 'scrooloose/syntastic'
-NeoBundle 'scrooloose/nerdcommenter'
-
-" You can specify revision/branch/tag.
-" NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
-
- call neobundle#end()
-
- filetype plugin indent on
-
- " If there are uninstalled bundles found on startup,
- " this will conveniently prompt you to install them.
- NeoBundleCheck
->>>>>>> dfee27312b07f8aeff8de3df1b2b7800534eb019
+call neobundle#end()
