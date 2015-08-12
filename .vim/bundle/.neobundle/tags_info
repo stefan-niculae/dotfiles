@@ -7,5 +7,6 @@ nerdtree
 rainbow
 syntastic
 vim-airline
+vim-colors-solarized
 vim-fugitive
 vim-surround

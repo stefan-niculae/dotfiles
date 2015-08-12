@@ -21,6 +21,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'luochen1990/rainbow'
 NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'altercation/vim-colors-solarized'
 
 call neobundle#end()
 

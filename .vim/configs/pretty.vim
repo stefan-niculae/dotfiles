@@ -1,17 +1,19 @@
 " TODO
-" find cooler font
-" find nicer colorscheme
-" fix font for airline https://github.com/bling/vim-airline/wiki/FAQ
+" nicer font (terminus?)
+" nicer colorscheme (solarizewd dark?)
 " make lowercase todo and fixme also be highlighted
 
 " syntax highlighting
 syntax on
 
-" color scheme
-colorscheme onedark
-
 " 256 colors
 set t_Co=256
+
+" color scheme
+set background=dark
+colorscheme onedark
+"colorscheme solarized
+"let g:solarized_termcolors=256
 
 " this doesn't work...
 " set guifont=FuraMono-Bold\ Powerline

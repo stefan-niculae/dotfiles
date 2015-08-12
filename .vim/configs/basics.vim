@@ -8,14 +8,8 @@ set backspace=2
 " show matching pair for () [] {}
 set showmatch
 
-" activate indenting
-filetype indent on
-
-" auto indenting
-" TODO: fix autoindent
-"set autoindent
-
-" line numbers
+" hybrid line numbers
+set relativenumber
 set number
 
 " enable mouse on compatible terminal emulators
