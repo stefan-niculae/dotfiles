@@ -22,3 +22,11 @@ colorscheme onedark
 let g:airline_powerline_fonts = 1
 set laststatus=2
 set encoding=utf-8
+
+" current line highlight
+set cursorline
+
+" different color bg after 80 chars
+let &colorcolumn=join(range(81,999),",")
+highlight ColorColumn ctermbg=234 guibg=#2c2d27
+

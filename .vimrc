@@ -10,3 +10,5 @@ runtime configs/pretty.vim
 runtime configs/whitespace.vim
 runtime configs/search.vim
 runtime configs/internal.vim
+runtime configs/splits.vim
+

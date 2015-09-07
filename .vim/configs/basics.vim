@@ -5,6 +5,9 @@
 " backspace in insert mode works like normal editor
 set backspace=2
 
+" show the cursor position all the time
+"set ruler
+
 " show matching pair for () [] {}
 set showmatch
 
@@ -20,6 +23,7 @@ endif
 " doesn't work...
 set clipboard=unnamedplus
 
-" leader is space
-let mapleader=" "
+" open a file at the last edited location
+au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
+                    \ exe "normal! g`\"" | endif
 

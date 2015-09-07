@@ -7,3 +7,5 @@ augroup END " }
 " update airline mode quicker
 set timeoutlen=50 ttimeoutlen=10
 
+" reload vimrc on save
+au BufWritePost .vimrc so ~/.vimrc

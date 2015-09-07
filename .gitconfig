@@ -1,0 +1,15 @@
+[core]
+    editor = /usr/bin/vim
+[user]
+    name = Stefan Niculae
+    email = stefan.niculae@intel.com
+[push]
+    default = simple
+[alias]
+    a = add -A
+    s = status -s
+    cl = clone
+    c = commit -m
+    p = push
+    b = branch
+    co = checkout

@@ -3,6 +3,7 @@
 " C-e for nerdtree
 " C-/ for toggling comments
 " swap grave/tilde
+" backspace to behave as usual in normal mode
 
 " capslock acts as escape
 silent !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
@@ -14,13 +15,15 @@ vnoremap ; :
 vnoremap : ;
 
 " leader is space
-let mapleader = "\<Space>"
+"let mapleader = "\<Space>"
+"let mapleader = " "
+let mapleader=","
 
 " workdir tree
 nnoremap <C-e> :NERDTreeToggle<CR>
 
 " toggle comments
-nnoremap <C-b> <leader>c<leader>
+"nnoremap <C-b> <leader>c<leader>
 
 " disable auto indentation on paste
 command Paste execute 'set paste | insert | set nopaste'
@@ -52,17 +55,22 @@ nnoremap <silent> <DEL> :call Delete_key()<CR>
 " return key behaves like in normal mode
 nnoremap <silent> <CR> i<CR><Esc>
 
-" backspace key behaves like in normal mode
-func Backspace_key()
-    if col('.') == 1
-        if line('.') != 1
-            return "\<ESC>kA\<Del>"
-        else
-            return ""
-        endif
-    else
-        return "\<Left>\<Del>"
-    endif
-endfunc
-nnoremap <BS> Backspace_key()
+" Better comand-line editing
+cnoremap <C-j> <t_kd>
+cnoremap <C-k> <t_ku>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
 
+" G actually takes you to the end of the file
+map G G$
+
+" don't deselect after indent/unindent
+vnoremap > >gv
+vnoremap < <gv
+
+" tab and shift-tab indent and unindent
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv

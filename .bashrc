@@ -1,15 +1,32 @@
 # .bashrc
 
-# Source global definitions
+# ? Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-alias ls='ls -a --color'
+# Clean command prompt (path is at the top)
 export PS1="> "
 
-local256="$COLORTERM$XTERM_VERSION$ROXTERM_ID$KONSOLE_DBUS_SESSION"
+# Aliases
+# Navigation
+alias ls='ls -a --color'
+alias l=ls
+alias ..='cd ..'
+alias ...='cd ...'
+alias ....='cd ....'
 
+# Git
+alias gs='git s'
+alias ga='git a'
+alias gc='git c'
+alias gp='git p'
+alias gb='git b'
+alias gcl='git cl'
+alias gco='git co'
+
+# ?
+local256="$COLORTERM$XTERM_VERSION$ROXTERM_ID$KONSOLE_DBUS_SESSION"
 if [ -n "$local256" ] || [ -n "$SEND_256_COLORS_TO_REMOTE" ]; then
 
     case "$TERM" in

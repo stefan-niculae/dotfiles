@@ -18,18 +18,20 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'luochen1990/rainbow'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'altercation/vim-colors-solarized'
 
 call neobundle#end()
 
-filetype plugin indent on
-
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
+
+" activate indenting (because of a bug this needs to be done after NeoBundle)
+filetype plugin indent on
+"set autoindent
 
 " Get rid of default mode indicato
 set noshowmode

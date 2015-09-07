@@ -1,17 +1,15 @@
 " TODO
 " add newline to end of file on save
 " disable trailing whitespace display on current line in insert mode
+" when saving and trimming whitespace, return cursor to position before saving
 
 " number of spaces a tab counts for when editing
 set softtabstop=4
 
-" activate indenting
-filetype plugin indent on
-"set autoindent
-
 " set tabs to have 4 spaces
 set tabstop=4
 set shiftwidth=4
+set shiftround
 
 " expand tabs into spaces
 set expandtab
@@ -32,4 +30,6 @@ autocmd FileAppendPre   * :call TrimWhiteSpace()
 autocmd FilterWritePre  * :call TrimWhiteSpace()
 autocmd BufWritePre     * :call TrimWhiteSpace()
 
+" Force newline at end of file (doesn'y work..)
 set endofline
+
