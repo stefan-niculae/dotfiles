@@ -12,9 +12,9 @@ export PS1="> "
 # Navigation
 alias ls='ls -a --color'
 alias l=ls
-alias ..='cd ..'
-alias ...='cd ...'
-alias ....='cd ....'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
 
 # Git
 alias gs='git s'
