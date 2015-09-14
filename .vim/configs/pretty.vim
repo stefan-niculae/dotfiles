@@ -30,3 +30,5 @@ set cursorline
 let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=234 guibg=#2c2d27
 
+set gcr=a:blinkon0
+

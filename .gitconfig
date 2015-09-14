@@ -6,10 +6,11 @@
 [push]
     default = simple
 [alias]
-    a = add -A
     s = status -s
     cl = clone
+    a = add -A
     c = commit -m
+    ac = commit -a -m
     p = push
     b = branch
     co = checkout

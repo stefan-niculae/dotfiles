@@ -4,6 +4,8 @@
 
 " backspace in insert mode works like normal editor
 set backspace=2
+"?
+"set backspace=indent, eol, start
 
 " show the cursor position all the time
 "set ruler
@@ -26,4 +28,9 @@ set clipboard=unnamedplus
 " open a file at the last edited location
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
                     \ exe "normal! g`\"" | endif
+
+" Experimental
+
+" bigger :cmdline history
+"set history=1000
 

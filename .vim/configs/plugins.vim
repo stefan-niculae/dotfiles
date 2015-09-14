@@ -33,7 +33,7 @@ NeoBundleCheck
 filetype plugin indent on
 "set autoindent
 
-" Get rid of default mode indicato
+" Get rid of default mode indicator
 set noshowmode
 
 " Syntastic

@@ -15,15 +15,22 @@ alias l=ls
 alias ..='cd ../'
 alias ...='cd ../../'
 alias ....='cd ../../../'
+alias p='pwd'
 
 # Git
 alias gs='git s'
 alias ga='git a'
 alias gc='git c'
+alias gca='git ac'
 alias gp='git p'
 alias gb='git b'
 alias gcl='git cl'
 alias gco='git co'
+function gacp() {
+    ga
+    gc "$1"
+    gp
+}
 
 # ?
 local256="$COLORTERM$XTERM_VERSION$ROXTERM_ID$KONSOLE_DBUS_SESSION"
