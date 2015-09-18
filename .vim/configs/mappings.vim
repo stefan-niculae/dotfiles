@@ -15,13 +15,14 @@ vnoremap ; :
 vnoremap : ;
 
 " leader is space
-" why the hell doesn't this work?!
-"let mapleader = "\<Space>"
-"let mapleader = " "
-"let mapleader=","
+nnoremap <Space> <nop>
+let mapleader = "\<Space>"
 
 " workdir tree
 nnoremap <C-e> :NERDTreeToggle<CR>
+
+" cursor stays in place when exiting insert into normal mode
+inoremap <Esc> <Esc>l
 
 " toggle comments
 "nnoremap <C-b> <leader>c<leader>
@@ -32,25 +33,25 @@ nnoremap <C-e> :NERDTreeToggle<CR>
 
 " delete key behaves like in insert mode
 function! Delete_key(...)
-  let line=getline (".")
-  if line=~'^\s*$'
-    execute "normal dd"
-    return
-  endif
-  let column = col (".")
-  let line_len = strlen (line)
-  let first_or_end=0
-  if column == 1
+let line=getline (".")
+if line=~'^\s*$'
+execute "normal dd"
+return
+endif
+let column = col (".")
+let line_len = strlen (line)
+let first_or_end=0
+if column == 1
+let first_or_end=1
+else
+if column == line_len
     let first_or_end=1
-  else
-    if column == line_len
-      let first_or_end=1
-    endif
-  endif
-  execute "normal i\<DEL>\<Esc>"
-  if first_or_end == 0
-    execute "normal l"
-  endif
+endif
+endif
+execute "normal i\<DEL>\<Esc>"
+if first_or_end == 0
+execute "normal l"
+endif
 endfunction
 nnoremap <silent> <DEL> :call Delete_key()<CR>
 

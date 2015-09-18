@@ -2,10 +2,8 @@ YouCompleteMe
 auto-pairs
 ctrlp.vim
 neobundle.vim
-nerdcommenter
 nerdtree
 rainbow
 syntastic
 vim-airline
 vim-fugitive
-vim-surround
