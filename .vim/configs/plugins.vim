@@ -7,6 +7,9 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
 
+" plugin install bug?
+filetype plugin off
+
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
@@ -21,7 +24,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'luochen1990/rainbow'
 NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'altercation/vim-colors-solarized'
+"NeoBundle 'altercation/vim-colors-solarized'
 
 call neobundle#end()
 
@@ -48,4 +51,5 @@ let g:syntastic_check_on_wq = 0
 
 " Rainbow
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
+map <Leader>i i*dd
 

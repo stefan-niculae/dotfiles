@@ -1,6 +1,6 @@
 " TODO
-" nicer font (terminus?)
-" nicer colorscheme (solarizewd dark?)
+" nicer font (bookmarks/vim/fonts)
+" nicer colorscheme (solarized dark?)
 " make lowercase todo and fixme also be highlighted
 
 " syntax highlighting
@@ -30,5 +30,7 @@ set cursorline
 let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=234 guibg=#2c2d27
 
-set gcr=a:blinkon0
+" disable all blinking
+" doesn't work
+set guicursor+=a:blinkon0
 
