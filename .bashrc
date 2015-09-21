@@ -17,6 +17,9 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias p='pwd'
 
+# Search
+alias grep='grep -nr --color=auto'
+
 # Git
 alias gs='git s'
 alias ga='git a'
@@ -31,6 +34,9 @@ function gacp() {
     gc "$1"
     gp
 }
+
+# Misc
+alias cal='cal --monday --color=auto'        # calendar starts on monday
 
 # ?
 local256="$COLORTERM$XTERM_VERSION$ROXTERM_ID$KONSOLE_DBUS_SESSION"

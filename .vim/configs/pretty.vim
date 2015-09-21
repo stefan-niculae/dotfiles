@@ -2,6 +2,7 @@
 " nicer font (bookmarks/vim/fonts)
 " nicer colorscheme (solarized dark?)
 " make lowercase todo and fixme also be highlighted
+" cursor to be underscore or something more helpful
 
 " syntax highlighting
 syntax on

@@ -3,7 +3,6 @@
 " C-e for nerdtree
 " C-/ for toggling comments
 " swap grave/tilde
-" backspace to behave as usual in normal mode
 
 " capslock acts as escape
 silent !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
