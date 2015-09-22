@@ -38,3 +38,14 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 " bigger :cmdline history
 "set history=1000
 
+" Complete filenames with <Tab>,
+" but not ones you would never edit with vim
+set wildmenu
+set wildmode=longest,list
+set wildignore+=*.a,*.o
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
+set wildignore+=.DS_Store,.git,.hg,.svn
+set wildignore+=*~,*.swp,*.tmp
+
+" Minimum number of lines above or below cursor
+set scrolloff=5

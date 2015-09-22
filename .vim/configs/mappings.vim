@@ -3,6 +3,7 @@
 " C-e for nerdtree
 " C-/ for toggling comments
 " swap grave/tilde
+" fix delete key: to delete when at end of line and not to jump backwards
 
 " capslock acts as escape
 silent !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
@@ -77,9 +78,8 @@ inoremap <S-Tab> <C-D>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-" minus deletes a row
-nnoremap - dd
-vnoremap - dd
+" minus deletes row contents
+nnoremap - 0d$
 
 " Ctrl-a selects all
 nnoremap <C-a> ggvG$
