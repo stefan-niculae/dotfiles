@@ -3,12 +3,12 @@
 set nocompatible
 
 " Keep configs separated in files
-runtime configs/plugins.vim
-runtime configs/basics.vim
-runtime configs/mappings.vim
-runtime configs/pretty.vim
-runtime configs/whitespace.vim
-runtime configs/search.vim
-runtime configs/internal.vim
-runtime configs/splits.vim
+runtime plugins.vim
+runtime basics.vim
+runtime mappings.vim
+runtime pretty.vim
+runtime whitespace.vim
+runtime search.vim
+runtime internal.vim
+runtime splits.vim
 
