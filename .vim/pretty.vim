@@ -5,34 +5,34 @@
 " cursor to be underscore or something more helpful
 " search highlight to be different
 
-" syntax highlighting
+" Syntax highlighting
 syntax on
 
 " 256 colors
 set t_Co=256
 
-" color scheme
+" Color scheme
 set background=dark
 colorscheme onedark
 "colorscheme solarized
 "let g:solarized_termcolors=256
 
-" this doesn't work...
+" This doesn't work...
 " set guifont=FuraMono-Bold\ Powerline
 
-" airline
+" Airline
 let g:airline_powerline_fonts = 1
 set laststatus=2
 set encoding=utf-8
 
-" current line highlight
+" Current line highlight
 set cursorline
 
-" different color bg after 80 chars
+" Different color bg after 80 chars
 let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=234 guibg=#2c2d27
 
-" disable all blinking
+" Disable all blinking
 " doesn't work
 set guicursor+=a:blinkon0
 

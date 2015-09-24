@@ -3,31 +3,31 @@
 " make it able to paste text copied from vim into system things
 " <Leader><something> or z= is too hard to enter (to little time between)
 
-" backspace in insert mode works like in an usual
+" Backspace in insert mode works like in an usual
 " in normal mode use x or X, not BS
 set backspace=2
 
-" show matching pair for () [] {}
+" Show matching pair for () [] {}
 set showmatch
 
-" hybrid line numbers
+" Hybrid line numbers
 set relativenumber
 set number
 
-" enable mouse on compatible terminal emulators
+" Enable mouse on compatible terminal emulators
 if has('mouse')
     set mouse=a
 endif
 
-" copy/pasting into system clipboard
+" Copy/pasting into system clipboard
 " doesn't work...
 set clipboard+=unnamedplus
 set clipboard+=unnamed
-" enter insert mode before pasting to avoid cutting up first few words
+" Enter insert mode before pasting to avoid cutting up first few words
 " doesn't work
 nmap <C-V> i<C-V><esc>
 
-" open a file at the last edited location
+" Open a file at the last edited location
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
                     \ exe "normal! g`\"" | endif
 
@@ -57,8 +57,6 @@ set nospell
 " Set language to british english (default is en)
 set spelllang=en_gb
 
-" Experimental
-
-" bigger :cmdline history
-"set history=1000
+" Bigger :cmdline history
+set history=1000
 

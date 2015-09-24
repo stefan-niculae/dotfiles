@@ -13,20 +13,18 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Add or remove your Bundles here:
 NeoBundle 'bling/vim-airline'           " status line at the bottom
 " TODO surround doesn't work...
-" surrounding with parantheses, brackets, quotes, tags etc
-NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-surround'          " surrounding with parantheses, brackets, quotes, tags etc
 NeoBundle 'scrooloose/nerdtree'         " file tree
 NeoBundle 'scrooloose/syntastic'        " syntax checking TODO learn how to use this
 " TODO none of the commenting plugins work...
-" toggle comments on region
-"NeoBundle 'scrooloose/nerdcommenter'
+"NeoBundle 'scrooloose/nerdcommenter'   " toggle comments on region
 "NeoBundle 'tpope/vim-commentary'
 "NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'ctrlpvim/ctrlp.vim'      " fuzzy file finder
-NeoBundle 'tpope/vim-fugitive'      " git integration TODO learn how to use this
-NeoBundle 'jiangmiao/auto-pairs'    " insert/delete brackets, parantheses, quotes in pairs
-NeoBundle 'luochen1990/rainbow'     " color different levels of parantheses in different colors
-NeoBundle 'Valloric/YouCompleteMe'  " fuzzy code completion
+NeoBundle 'ctrlpvim/ctrlp.vim'          " fuzzy file finder
+NeoBundle 'tpope/vim-fugitive'          " git integration TODO learn how to use this
+NeoBundle 'jiangmiao/auto-pairs'        " insert/delete brackets, parantheses, quotes in pairs
+NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses in different colors
+NeoBundle 'Valloric/YouCompleteMe'      " fuzzy code completion
 
 call neobundle#end()
 
@@ -34,7 +32,7 @@ call neobundle#end()
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
-" activate indenting (because of a bug this needs to be done after NeoBundle)
+" Activate indenting (because of a bug this needs to be done after NeoBundle)
 filetype plugin indent on
 
 " Get rid of default mode indicator

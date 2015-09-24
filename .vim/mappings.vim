@@ -6,57 +6,60 @@
 " when on first column, pressing esc from insert moves once to the right
 " f, t, T, F to go beyond line
 
-" capslock acts as escape
+" Capslock acts as escape
 silent !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
-" swap semicolon and colon
+" Swap semicolon and colon
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 
-" leader is space
+" Leader is space
 nnoremap <Space> <nop>
 let mapleader = "\<Space>"
 
-" workdir tree
+" Workdir tree
 nnoremap <Leader>t :NERDTreeToggle<CR>
 
-" cursor stays in place when exiting insert into normal mode
+" Cursor stays in place when exiting insert into normal mode
 inoremap <Esc> <Esc>l
 
-" toggle comments
+" Toggle comments
+" plugin doesn't work...
 "nnoremap <C-b> <leader>c<leader>
 
-" disable auto indentation on paste
+" Disable auto indentation on paste
 " doesn't work
 "command Paste execute 'set paste | insert | set nopaste'
 
-" delete key behaves like in insert mode
+" Delete key behaves like in insert mode
 function! Delete_key(...)
-let line=getline (".")
-if line=~'^\s*$'
-execute "normal dd"
-return
-endif
-let column = col (".")
-let line_len = strlen (line)
-let first_or_end=0
-if column == 1
-let first_or_end=1
-else
-if column == line_len
-    let first_or_end=1
-endif
-endif
-execute "normal i\<DEL>\<Esc>"
-if first_or_end == 0
-execute "normal l"
-endif
+    let line=getline (".")
+    if line=~'^\s*$'
+        execute "normal dd"
+            return
+    endif
+    let column = col (".")
+    let line_len = strlen (line)
+    let first_or_end=0
+
+    if column == 1
+        let first_or_end=1
+    else
+        if column == line_len
+            let first_or_end=1
+        endif
+    endif
+
+    execute "normal i\<DEL>\<Esc>"
+    if first_or_end == 0
+        execute "normal l"
+    endif
 endfunction
 nnoremap <silent> <DEL> :call Delete_key()<CR>
 
-" return key behaves like in normal mode
+" Return key behaves like in insert mode
 nnoremap <silent> <CR> i<CR><Esc>
 
 " Better comand-line editing
@@ -68,18 +71,18 @@ cnoremap <C-e> <End>
 " G actually takes you to the end of the file
 map G G$
 
-" don't deselect after indent/unindent
+" Don't deselect after indent/unindent
 vnoremap > >gv
 vnoremap < <gv
 
-" tab and shift-tab indent and unindent
+" Tab and shift-tab indent and unindent
 nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
 inoremap <S-Tab> <C-D>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-" minus deletes row contents
+" Minus deletes row contents
 nnoremap - 0d$
 
 " Ctrl-a selects all
@@ -148,5 +151,6 @@ xnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
 " TODO make esc toggle between normal/insert (enter insert mode from normal)
 "nnoremap <silent><Esc> :startinsert<CR>
 
+" F5 toggles spell checking
 nnoremap <silent> <F5> :set spell!<CR>
 

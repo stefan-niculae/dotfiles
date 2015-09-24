@@ -1,11 +1,12 @@
-" autoreload vimrc on save
-augroup reload_vimrc " {
+" Autoreload vimrc on save
+augroup reload_vimrc
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
-augroup END " }
+augroup END
 
-" update airline mode quicker
+" Update airline mode quicker
 set timeoutlen=50 ttimeoutlen=10
 
-" reload vimrc on save
+" Reload vimrc on save
 au BufWritePost .vimrc so ~/.vimrc
+
