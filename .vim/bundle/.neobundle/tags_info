@@ -7,3 +7,4 @@ rainbow
 syntastic
 vim-airline
 vim-fugitive
+vim-surround

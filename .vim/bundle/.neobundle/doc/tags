@@ -315,6 +315,8 @@ airline-whitespace	airline.txt	/*airline-whitespace*
 airline-windowswap	airline.txt	/*airline-windowswap*
 airline-writing-extensions	airline.txt	/*airline-writing-extensions*
 airline.txt	airline.txt	/*airline.txt*
+cS	surround.txt	/*cS*
+cs	surround.txt	/*cs*
 ctrlp-changelog	ctrlp.txt	/*ctrlp-changelog*
 ctrlp-commands	ctrlp.txt	/*ctrlp-commands*
 ctrlp-contents	ctrlp.txt	/*ctrlp-contents*
@@ -328,6 +330,7 @@ ctrlp-mappings	ctrlp.txt	/*ctrlp-mappings*
 ctrlp-miscellaneous-configs	ctrlp.txt	/*ctrlp-miscellaneous-configs*
 ctrlp-options	ctrlp.txt	/*ctrlp-options*
 ctrlp.txt	ctrlp.txt	/*ctrlp.txt*
+ds	surround.txt	/*ds*
 filter-overrides	syntastic.txt	/*filter-overrides*
 fugitive	fugitive.txt	/*fugitive*
 fugitive#head(...)	fugitive.txt	/*fugitive#head(...)*
@@ -466,6 +469,8 @@ g:ycm_server_use_vim_stdout	youcompleteme.txt	/*g:ycm_server_use_vim_stdout*
 g:ycm_show_diagnostics_ui	youcompleteme.txt	/*g:ycm_show_diagnostics_ui*
 g:ycm_use_ultisnips_completer	youcompleteme.txt	/*g:ycm_use_ultisnips_completer*
 g:ycm_warning_symbol	youcompleteme.txt	/*g:ycm_warning_symbol*
+i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
+i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
 import-vim	youcompleteme.txt	/*import-vim*
 libpython	youcompleteme.txt	/*libpython*
 libpython2.7.a-...-relocation-R_X86_64_32	youcompleteme.txt	/*libpython2.7.a-...-relocation-R_X86_64_32*
@@ -548,6 +553,13 @@ neobundle-usage	neobundle.txt	/*neobundle-usage*
 neobundle-variables	neobundle.txt	/*neobundle-variables*
 neobundle.txt	neobundle.txt	/*neobundle.txt*
 remove_statusline_func	airline.txt	/*remove_statusline_func*
+surround	surround.txt	/*surround*
+surround-customizing	surround.txt	/*surround-customizing*
+surround-issues	surround.txt	/*surround-issues*
+surround-mappings	surround.txt	/*surround-mappings*
+surround-replacements	surround.txt	/*surround-replacements*
+surround-targets	surround.txt	/*surround-targets*
+surround.txt	surround.txt	/*surround.txt*
 syntastic	syntastic.txt	/*syntastic*
 syntastic-about	syntastic.txt	/*syntastic-about*
 syntastic-aggregating-errors	syntastic.txt	/*syntastic-aggregating-errors*
@@ -592,7 +604,11 @@ syntastic.txt	syntastic.txt	/*syntastic.txt*
 unite-action-neobundle-lazy	neobundle.txt	/*unite-action-neobundle-lazy*
 unite-action-neobundle-search	neobundle.txt	/*unite-action-neobundle-search*
 unite-kind-neobundle	neobundle.txt	/*unite-kind-neobundle*
+vS	surround.txt	/*vS*
+vgS	surround.txt	/*vgS*
 vim-sub-autoclose	youcompleteme.txt	/*vim-sub-autoclose*
+yS	surround.txt	/*yS*
+ySS	surround.txt	/*ySS*
 youcompleteme	youcompleteme.txt	/*youcompleteme*
 youcompleteme-c-diagnostic-support	youcompleteme.txt	/*youcompleteme-c-diagnostic-support*
 youcompleteme-c-family-semantic-completion-engine-usage	youcompleteme.txt	/*youcompleteme-c-family-semantic-completion-engine-usage*
@@ -639,3 +655,5 @@ youcompleteme-ycm-auto-inserts-completion-strings-i-dont-want	youcompleteme.txt	
 youcompleteme-ycm-conflicts-with-ultisnips-tab-key-usage	youcompleteme.txt	/*youcompleteme-ycm-conflicts-with-ultisnips-tab-key-usage*
 youcompleteme-ycm-does-not-read-identifiers-from-my-tags-files	youcompleteme.txt	/*youcompleteme-ycm-does-not-read-identifiers-from-my-tags-files*
 youcompleteme-ycmcompleter-subcommands	youcompleteme.txt	/*youcompleteme-ycmcompleter-subcommands*
+ys	surround.txt	/*ys*
+yss	surround.txt	/*yss*

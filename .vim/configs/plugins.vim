@@ -14,7 +14,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'bling/vim-airline'           " status line at the bottom
 " TODO surround doesn't work...
 " surrounding with parantheses, brackets, quotes, tags etc
-"NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/nerdtree'         " file tree
 NeoBundle 'scrooloose/syntastic'        " syntax checking TODO learn how to use this
 " TODO none of the commenting plugins work...

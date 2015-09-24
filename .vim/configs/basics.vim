@@ -1,13 +1,11 @@
 " TODO
 " make paste place text in vim as is, no indentation/comments modifications
 " make it able to paste text copied from vim into system things
+" <Leader><something> or z= is too hard to enter (to little time between)
 
 " backspace in insert mode works like in an usual
 " in normal mode use x or X, not BS
 set backspace=2
-
-" show the cursor position all the time
-"set ruler
 
 " show matching pair for () [] {}
 set showmatch
@@ -33,11 +31,6 @@ nmap <C-V> i<C-V><esc>
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
                     \ exe "normal! g`\"" | endif
 
-" Experimental
-
-" bigger :cmdline history
-"set history=1000
-
 " Complete filenames with <Tab>,
 " but not ones you would never edit with vim
 set wildmenu
@@ -49,3 +42,23 @@ set wildignore+=*~,*.swp,*.tmp
 
 " Minimum number of lines above or below cursor
 set scrolloff=5
+
+" Remove default startup message
+set shortmess+=I
+
+" No flashing screen as error feedback
+set visualbell t_vb=
+
+" C and D act from cursor to end of line, now Y does too
+nnoremap Y y$
+
+" Disable spell checking
+set nospell
+" Set language to british english (default is en)
+set spelllang=en_gb
+
+" Experimental
+
+" bigger :cmdline history
+"set history=1000
+

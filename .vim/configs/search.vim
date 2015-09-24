@@ -1,10 +1,10 @@
-" search as characters are entered
+" Search as characters are entered
 set incsearch
 
-" highlight matches
+" Highlight matches
 set hlsearch
 
-" case insensitive,
+" Case insensitive,
 " except when search contains an uppercase or casing is specified
 set ignorecase
 set smartcase
@@ -16,3 +16,15 @@ nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
+
+" Substitute all matches on the line
+" add \g to replace only first one
+set gdefault
+
+" Clear last search highlight
+nnoremap <silent> <Leader><Esc> :nohlsearch<CR>
+
+" Disable search highlighting when in insert mode
+autocmd InsertEnter * :setlocal nohlsearch
+autocmd InsertLeave * :setlocal hlsearch
+

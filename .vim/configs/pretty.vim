@@ -3,6 +3,7 @@
 " nicer colorscheme (solarized dark?)
 " make lowercase todo and fixme also be highlighted
 " cursor to be underscore or something more helpful
+" search highlight to be different
 
 " syntax highlighting
 syntax on

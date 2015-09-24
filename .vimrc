@@ -1,8 +1,8 @@
-" use vim settings, rather than vi
-" must be first
+" Use vim settings, rather than vi
+" Must be first
 set nocompatible
 
-" config files
+" Keep configs separated in files
 runtime configs/plugins.vim
 runtime configs/basics.vim
 runtime configs/mappings.vim

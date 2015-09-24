@@ -14,3 +14,4 @@
     p = push
     b = branch
     co = checkout
+    d = difftool --tool=meld --dir-diff

@@ -1,9 +1,10 @@
 " TODO
 " C-s to save
-" C-e for nerdtree
 " C-/ for toggling comments
 " swap grave/tilde
 " fix delete key: to delete when at end of line and not to jump backwards
+" when on first column, pressing esc from insert moves once to the right
+" f, t, T, F to go beyond line
 
 " capslock acts as escape
 silent !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
@@ -19,7 +20,7 @@ nnoremap <Space> <nop>
 let mapleader = "\<Space>"
 
 " workdir tree
-nnoremap <C-e> :NERDTreeToggle<CR>
+nnoremap <Leader>t :NERDTreeToggle<CR>
 
 " cursor stays in place when exiting insert into normal mode
 inoremap <Esc> <Esc>l
@@ -146,4 +147,6 @@ xnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
 
 " TODO make esc toggle between normal/insert (enter insert mode from normal)
 "nnoremap <silent><Esc> :startinsert<CR>
+
+nnoremap <silent> <F5> :set spell!<CR>
 

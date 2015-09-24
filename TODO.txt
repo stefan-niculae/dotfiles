@@ -1,0 +1,11 @@
+README:
+create readme
+add description of this repo (dotfiles for vim, git and zsh)
+move this todo into the readme
+
+ON BOOTSTRAPPING:
+git cache duration 1h (when cloned over HTTPS)
+generate public key if not there already and instruct to place it into github>settings>add SSH key
+
+TO ADD:
+global gitignore

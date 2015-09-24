@@ -29,10 +29,15 @@ alias gp='git p'
 alias gb='git b'
 alias gcl='git cl'
 alias gco='git co'
+alias gd='git d'
 function gacp() {
     ga
     gc "$1"
     gp
+}
+function gac() {
+    ga
+    gc "$1"
 }
 
 # Misc
