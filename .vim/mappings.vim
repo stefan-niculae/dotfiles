@@ -7,7 +7,8 @@
 " f, t, T, F to go beyond line
 
 " Capslock acts as escape
-silent !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+" this is done from the system
+"silent !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
 " Swap semicolon and colon
 nnoremap ; :
