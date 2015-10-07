@@ -10,12 +10,14 @@ export PS1="> "
 
 # Aliases
 # Navigation
-alias ls='ls -a --color'
+#alias ls='ls -a --color' # apparently --color is available for linux only
+alias ls='ls -aG'
 alias l=ls
 alias ..='cd ../'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias p='pwd'
+alias tree='tree -aC'
 
 # Search
 alias grep='grep -nr --color=auto'
@@ -41,7 +43,7 @@ function gac() {
 }
 
 # Misc
-alias cal='cal --monday --color=auto'        # calendar starts on monday
+#alias cal='cal --monday --color=auto'        # calendar starts on monday
 
 # ?
 local256="$COLORTERM$XTERM_VERSION$ROXTERM_ID$KONSOLE_DBUS_SESSION"
