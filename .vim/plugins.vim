@@ -12,7 +12,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
 NeoBundle 'bling/vim-airline'           " status line at the bottom
-" TODO surround doesn't work...
 NeoBundle 'tpope/vim-surround'          " surrounding with parantheses, brackets, quotes, tags etc
 NeoBundle 'scrooloose/nerdtree'         " file tree
 NeoBundle 'scrooloose/syntastic'        " syntax checking TODO learn how to use this
@@ -38,15 +37,15 @@ filetype plugin indent on
 " Get rid of default mode indicator
 set noshowmode
 
-" " Syntastic
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
-" " Rainbow
-" let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
+" Rainbow
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
