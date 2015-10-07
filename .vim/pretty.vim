@@ -4,6 +4,7 @@
 " make lowercase todo and fixme also be highlighted
 " cursor to be underscore or something more helpful
 " search highlight to be different
+" make theme compatible with semi-transparent terminal
 
 " Syntax highlighting
 syntax on
@@ -35,4 +36,3 @@ highlight ColorColumn ctermbg=234 guibg=#2c2d27
 " Disable all blinking
 " doesn't work
 set guicursor+=a:blinkon0
-

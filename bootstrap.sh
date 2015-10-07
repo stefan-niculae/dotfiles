@@ -3,7 +3,7 @@
 # handle folders with spaces in names
 
 is_ignored() {
-    ignored_files=". .. .DS_Store .localized .git TODO README.md ${0##*/}"
+    ignored_files=". .. .DS_Store .localized .git TODO README.md ${0##*/} Resources"
     for ignored in $ignored_files; do
         if [[ "$1" = "$ignored" ]]; then
             return 0 # true

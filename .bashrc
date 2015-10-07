@@ -63,3 +63,5 @@ if [[ $platform == 'linux' ]]; then
 elif [[ $platform == 'mac' ]]; then
    alias cal='ncal'
 fi
+
+alias vi=vim

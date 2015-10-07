@@ -24,7 +24,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'          " fuzzy file finder
 NeoBundle 'tpope/vim-fugitive'          " git integration TODO learn how to use this
 NeoBundle 'jiangmiao/auto-pairs'        " insert/delete brackets, parantheses, quotes in pairs
 NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses in different colors
-NeoBundle 'Valloric/YouCompleteMe'      " fuzzy code completion
+"NeoBundle 'Valloric/YouCompleteMe'      " fuzzy code completion
 
 call neobundle#end()
 
@@ -38,16 +38,15 @@ filetype plugin indent on
 " Get rid of default mode indicator
 set noshowmode
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" " Syntastic
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
-" Rainbow
-let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
-
+" " Rainbow
+" let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"

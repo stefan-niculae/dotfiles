@@ -9,6 +9,7 @@ generate public key if not there already and instruct to place it into github>se
 if mac, append source ~/.bashrc into .profile
 inform of applications to install: lightshot, bartender, bettertouchtool, the unarchiver + other utilities
 if mac add the US~Ro keyboard layout (~ and ` inverted, alt+[]\;' remapped to romanian diacritics) to /Library/Keyboard Layouts and instruct to activate it
+neobundle: curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh > install.sh; sh ./install.sh; ... rm -f install.sh . after this, remove .vim/bundle from rep
 
 TO ADD:
 global gitignore
