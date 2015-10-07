@@ -1,8 +1,9 @@
-# .bashrc
-
-# ? Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+platform='unknown'
+unamestr=$(uname)
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   platform='mac'
 fi
 
 # Clean command prompt (path is at the top)
@@ -10,8 +11,11 @@ export PS1="> "
 
 # Aliases
 # Navigation
-#alias ls='ls -a --color' # apparently --color is available for linux only
-alias ls='ls -aG'
+if [[ $platform == 'linux' ]]; then
+   alias ls='ls -a --color=auto'
+elif [[ $platform == 'mac' ]]; then
+   alias ls='ls -a -G'
+fi
 alias l=ls
 alias ..='cd ../'
 alias ...='cd ../../'
@@ -20,7 +24,17 @@ alias p='pwd'
 alias tree='tree -aC'
 
 # Search
-alias grep='grep -nr --color=auto'
+alias grep='grep --line-number --recursive --color=auto'
+# if [[ $platform == 'freebsd' ]]; then
+# TODO make grep with no arguments search in curr dir by default on mac
+#     function grep() {
+#         if [ $# -eq 0 ]; then
+#             echo "No arguments supplied"
+#         fi
+#
+#         grep "${@:2}"
+#     }
+# fi
 
 # Git
 alias gs='git s'
@@ -43,22 +57,9 @@ function gac() {
 }
 
 # Misc
-#alias cal='cal --monday --color=auto'        # calendar starts on monday
-
-# ?
-local256="$COLORTERM$XTERM_VERSION$ROXTERM_ID$KONSOLE_DBUS_SESSION"
-if [ -n "$local256" ] || [ -n "$SEND_256_COLORS_TO_REMOTE" ]; then
-
-    case "$TERM" in
-        'xterm') TERM=xterm-256color;;
-        'screen') TERM=screen-256color;;
-        'Eterm') TERM=Eterm-256color;;
-    esac
-    export TERM
-
-    if [ -n "$TERMCAP" ] && [ "$TERM" = "screen-256color" ]; then
-        TERMCAP=$(echo "$TERMCAP" | sed -e 's/Co#8/Co#256/g')
-        export TERMCAP
-    fi
+if [[ $platform == 'linux' ]]; then
+   alias cal='cal --monday --color=auto' # calendar starts on monday
+   echo linux lol
+elif [[ $platform == 'mac' ]]; then
+   alias cal='ncal'
 fi
-
