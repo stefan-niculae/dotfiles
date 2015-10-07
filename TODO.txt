@@ -6,6 +6,9 @@ move this todo into the readme
 ON BOOTSTRAPPING:
 git cache duration 1h (when cloned over HTTPS)
 generate public key if not there already and instruct to place it into github>settings>add SSH key
+if mac, append source ~/.bashrc into .profile
+inform of applications to install: lightshot, bartender, bettertouchtool, the unarchiver + other utilities
+if mac add the US~Ro keyboard layout (~ and ` inverted, alt+[]\;' remapped to romanian diacritics) to /Library/Keyboard Layouts and instruct to activate it
 
 TO ADD:
 global gitignore
