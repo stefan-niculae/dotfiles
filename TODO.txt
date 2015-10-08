@@ -11,6 +11,11 @@ inform of applications to install: lightshot, bartender, bettertouchtool, the un
 if mac add the US~Ro keyboard layout (~ and ` inverted, alt+[]\;' remapped to romanian diacritics) to /Library/Keyboard Layouts and instruct to activate it
 neobundle: curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh > install.sh; sh ./install.sh; ... rm -f install.sh . after this, remove .vim/bundle from rep
 install font and instruct to change it
+install zsh and change shell to it and put custom theme in
+install iterm2 and add preferences also change its icon to the default terminal one
+add .hushlogin
 
 TO ADD:
 global gitignore
+.aliases
+minimal_sn.zsh-theme
