@@ -14,12 +14,9 @@ set t_Co=256
 
 " Color scheme
 set background=dark
-colorscheme onedark
+colorscheme vendetta
 "colorscheme solarized
 "let g:solarized_termcolors=256
-
-" This doesn't work...
-" set guifont=FuraMono-Bold\ Powerline
 
 " Airline
 let g:airline_powerline_fonts = 1
@@ -34,5 +31,4 @@ let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=234 guibg=#2c2d27
 
 " Disable all blinking
-" doesn't work
 set guicursor+=a:blinkon0

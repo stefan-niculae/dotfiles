@@ -155,3 +155,5 @@ xnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
 " F5 toggles spell checking
 nnoremap <silent> <F5> :set spell!<CR>
 
+" Leader-c toggles comments
+noremap <silent> <Leader>c :TComment<CR>

@@ -15,21 +15,20 @@ NeoBundle 'bling/vim-airline'           " status line at the bottom
 NeoBundle 'tpope/vim-surround'          " surrounding with parantheses, brackets, quotes, tags etc
 NeoBundle 'scrooloose/nerdtree'         " file tree
 NeoBundle 'scrooloose/syntastic'        " syntax checking TODO learn how to use this
-" TODO none of the commenting plugins work...
-"NeoBundle 'scrooloose/nerdcommenter'   " toggle comments on region
-"NeoBundle 'tpope/vim-commentary'
-"NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'tomtom/tcomment_vim'         " toggle comments
 NeoBundle 'ctrlpvim/ctrlp.vim'          " fuzzy file finder
 NeoBundle 'tpope/vim-fugitive'          " git integration TODO learn how to use this
 NeoBundle 'jiangmiao/auto-pairs'        " insert/delete brackets, parantheses, quotes in pairs
 NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses in different colors
-"NeoBundle 'Valloric/YouCompleteMe'      " fuzzy code completion
+"NeoBundle 'Valloric/YouCompleteMe'      " fuzzy code completion TODO check compiled dependencies
+NeoBundle 'evgenyzinoviev/vim-vendetta'             " color scheme
 
 call neobundle#end()
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
+" NeoBundleClean
 
 " Activate indenting (because of a bug this needs to be done after NeoBundle)
 filetype plugin indent on
@@ -38,6 +37,7 @@ filetype plugin indent on
 set noshowmode
 
 " Syntastic
+" TODO only enable these if syntastic is installed (for the first time, when you before you install the plugin)
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
