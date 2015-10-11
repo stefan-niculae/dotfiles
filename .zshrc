@@ -1,8 +1,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Stefan/.oh-my-zsh
 
+[[ "$TERM" == "xterm" ]] && export TERM=xterm-256color
 # Custom minimal theme
 ZSH_THEME="minimal_sn"
+# ZSH_THEME="minimal"
 
 # _ and - are interchangeable.
 # hyphen_insensitive="true"
@@ -49,9 +51,40 @@ fi
 # ssh
 # export ssh_key_path="~/.ssh/dsa_id"
 
+# use vi as readline editor
+bindkey -v
+# set delay to 0.001 seconds between changing vim modes
+export KEYTIMEOUT=.01
+
+# Activate auto-completion
+# doesn't work...
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+# Activate plugins
+# TODO make a relative path instead
+# source ~/.zshrc/plugins.zsc
+# TODO move this to their folder
+# source ~/.zsh/antigen/antigen.zsh
+#
+# # Load the oh-my-zsh's library.
+# antigen use oh-my-zsh
+#
+# # Bundles from the default repo (robbyrussell's oh-my-zsh).
+# antigen bundle git
+# antigen bundle heroku
+# antigen bundle pip
+# antigen bundle lein
+# antigen bundle command-not-found
+#
+# # Syntax highlighting bundle.
+# antigen bundle zsh-users/zsh-syntax-highlighting
+#
+# # Load the theme.
+# antigen theme $HOME/.oh-my-zsh/custom/themes/minimal_sn
+#
+# # Tell antigen that you're done.
+# antigen apply
+
 # load aliases
 source ~/.aliases
 alias -s conf='$editor'
-
-# Activate auto-completion
-fpath=(/usr/local/share/zsh-completions $fpath)
