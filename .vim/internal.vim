@@ -1,3 +1,6 @@
+" TODO
+" autosave (on focus lost and after an interval)
+
 " Autoreload vimrc on save
 " doesn't work
 " augroup reload_vimrc

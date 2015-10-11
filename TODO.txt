@@ -14,6 +14,7 @@ install font and instruct to change it
 install zsh and change shell to it and put custom theme in
 install iterm2 and add preferences also change its icon to the default terminal one
 add .hushlogin
+tell user to update git (through brew) - because apple git makes reset-terminal super slow and thus the readline is unusable
 
 TO ADD:
 global gitignore
@@ -28,3 +29,33 @@ TO FIX:
 zsh left prompt colored based on vi mode
 last 3 levels of dirs for the path (and shorten them)
 https://github.com/S1cK94/minimal/blob/master/minimal.zsh-theme
+
+(interesting) ZSH PLUGINS:
+--from the github wiki--
+brew
+cabal?
+chucknorris
+coffee?
+common-aliases
+dirhistory/dircycle
+fasd
+git
+gitfast?
+git-extras
+npm
+osx
+pep8?
+pip
+pylint?
+python?
+tmux
+tmuxinator?
+vi-mode
+virtualenvwrapper
+wd
+
+https://github.com/unixorn/awesome-zsh-plugins
+prezto
+antigen-hs/zgen
+alf
+fresh?

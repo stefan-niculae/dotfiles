@@ -6,6 +6,8 @@ export ZSH=/Users/Stefan/.oh-my-zsh
 ZSH_THEME="minimal_sn"
 # ZSH_THEME="minimal"
 
+setopt prompt_subst
+
 # _ and - are interchangeable.
 # hyphen_insensitive="true"
 
@@ -88,3 +90,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # load aliases
 source ~/.aliases
 alias -s conf='$editor'
+
+# virtualenvwrapper activation
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
