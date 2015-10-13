@@ -15,6 +15,7 @@ install zsh and change shell to it and put custom theme in
 install iterm2 and add preferences also change its icon to the default terminal one
 add .hushlogin
 tell user to update git (through brew) - because apple git makes reset-terminal super slow and thus the readline is unusable
+install macvim
 
 TO ADD:
 global gitignore

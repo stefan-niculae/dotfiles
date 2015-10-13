@@ -20,7 +20,14 @@ NeoBundle 'ctrlpvim/ctrlp.vim'          " fuzzy file finder
 NeoBundle 'tpope/vim-fugitive'          " git integration TODO learn how to use this
 NeoBundle 'jiangmiao/auto-pairs'        " insert/delete brackets, parantheses, quotes in pairs
 NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses in different colors
-NeoBundle 'Valloric/YouCompleteMe'      " fuzzy code completion TODO fix ycm python fiasco, learn more about this plugin's functionality
+NeoBundle 'Valloric/YouCompleteMe', {   " fuzzy code completion TODO things in the vim doc
+     \ 'build'      : {
+        \ 'mac'     : './install.py',
+        \ 'unix'    : './install.py',
+        \ 'windows' : 'install.py',
+        \ 'cygwin'  : './install.py'
+        \ }
+     \ }
 NeoBundle 'evgenyzinoviev/vim-vendetta' " color scheme
 
 call neobundle#end()
@@ -51,3 +58,8 @@ let g:syntastic_check_on_wq = 0
 " Rainbow
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
 
+" You Complete Me
+" TODO Shift-<Tab> isin't passed to vim in terminal
+" let g:ycm_key_invoke_completion = '<C-a>'
+let g:ycm_min_num_of_chars_for_completion = 1 " experimental (default is 2)
+let g:ycm_complete_in_comments = 1
