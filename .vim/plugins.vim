@@ -20,8 +20,8 @@ NeoBundle 'ctrlpvim/ctrlp.vim'          " fuzzy file finder
 NeoBundle 'tpope/vim-fugitive'          " git integration TODO learn how to use this
 NeoBundle 'jiangmiao/auto-pairs'        " insert/delete brackets, parantheses, quotes in pairs
 NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses in different colors
-"NeoBundle 'Valloric/YouCompleteMe'      " fuzzy code completion TODO check compiled dependencies
-NeoBundle 'evgenyzinoviev/vim-vendetta'             " color scheme
+NeoBundle 'Valloric/YouCompleteMe'      " fuzzy code completion TODO fix ycm python fiasco, learn more about this plugin's functionality
+NeoBundle 'evgenyzinoviev/vim-vendetta' " color scheme
 
 call neobundle#end()
 
@@ -49,3 +49,4 @@ let g:syntastic_check_on_wq = 0
 
 " Rainbow
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
+

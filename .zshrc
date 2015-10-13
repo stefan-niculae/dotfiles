@@ -90,6 +90,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # load aliases
 source ~/.aliases
 alias -s conf='$editor'
+source ~/.zsh/fixes.zsh
 
 # virtualenvwrapper activation
 export WORKON_HOME=$HOME/.virtualenvs

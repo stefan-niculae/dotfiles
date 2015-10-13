@@ -24,11 +24,8 @@ scripts:
 http://hints.macworld.com/article.php?story=20100509134904820
 https://blog.bertvanlangen.com/articles/toggle-hidden-files-finder-os-x-10-10-yosemite/
 better touch tool configurations!
+iterm2 themes
 
-TO FIX:
-zsh left prompt colored based on vi mode
-last 3 levels of dirs for the path (and shorten them)
-https://github.com/S1cK94/minimal/blob/master/minimal.zsh-theme
 
 (interesting) ZSH PLUGINS:
 --from the github wiki--
