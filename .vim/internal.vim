@@ -1,5 +1,5 @@
 " Autoreload vimrc on save
-" FIXME doesn't work
+" TODO make it work with the config files in .vim/* aswell
 " augroup reload_vimrc
 "     autocmd!
 "     autocmd BufWritePost $MYVIMRC source $MYVIMRC
