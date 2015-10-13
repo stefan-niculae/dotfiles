@@ -13,7 +13,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Add or remove your Bundles here:
 NeoBundle 'bling/vim-airline'           " status line at the bottom
 NeoBundle 'tpope/vim-surround'          " surrounding with parantheses, brackets, quotes, tags etc
-NeoBundle 'scrooloose/nerdtree'         " file tree
+NeoBundle 'scrooloose/nerdtree'         " file tree TODO learn how to use this (after learning about tabs and tmux)
 NeoBundle 'scrooloose/syntastic'        " syntax checking TODO learn how to use this
 NeoBundle 'tomtom/tcomment_vim'         " toggle comments
 NeoBundle 'ctrlpvim/ctrlp.vim'          " fuzzy file finder
@@ -42,6 +42,7 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+" Syntastic settings
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1

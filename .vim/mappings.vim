@@ -157,3 +157,12 @@ nnoremap <silent> <F5> :set spell!<CR>
 
 " Leader-c toggles comments
 noremap <silent> <Leader>c :TComment<CR>
+
+" Leader-e shows syntastic errors
+noremap <silent> <Leader>e :Errors<CR>
+" Leader-s toogles syntastic mode
+map <Leader>s :SyntasticToggleMode<CR>
+
+
+
+
