@@ -1,7 +1,6 @@
 " TODO
 " C-s to save
 " C-/ for toggling comments
-" swap grave/tilde
 " fix delete key: to delete when at end of line and not to jump backwards
 " when on first column, pressing esc from insert moves once to the right
 " f, t, T, F to go beyond line
@@ -136,6 +135,7 @@ function! MoveLineOrVisualUpOrDown(move_arg)
   execute "normal! ".col_num."|"
 endfunction
 
+" TODO remap these (C-directional key is no good for mac)
 nnoremap <silent> <C-Up> :<C-u>call MoveLineUp()<CR>
 nnoremap <silent> <C-Down> :<C-u>call MoveLineDown()<CR>
 inoremap <silent> <C-Up> <C-o>:call MoveLineUp()<CR>
@@ -162,7 +162,4 @@ noremap <silent> <Leader>c :TComment<CR>
 noremap <silent> <Leader>e :Errors<CR>
 " Leader-s toogles syntastic mode
 map <Leader>s :SyntasticToggleMode<CR>
-
-
-
 

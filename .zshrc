@@ -55,8 +55,9 @@ fi
 
 # use vi as readline editor
 bindkey -v
-# set delay to 0.001 seconds between changing vim modes
-export KEYTIMEOUT=.01
+# set delay to 10ms between changing vim modes
+# FIXME it seems like it is not updating at all on time
+export KEYTIMEOUT=10
 
 # Activate auto-completion
 # doesn't work...

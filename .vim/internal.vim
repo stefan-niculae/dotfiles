@@ -30,7 +30,7 @@ function ToggleWrap()
     silent! nunmap  <buffer> $
   else
     echo "Wrap ON"
-    setlocal wrap linebreak nolist
+    setlocal wrap linebreak
     set virtualedit=
     setlocal display+=lastline
     noremap  <buffer> <silent> <Up>   gk
@@ -51,3 +51,4 @@ endfunction
 set nowrap " TODO find out if there is a set wrap somewhere
 " Wrap is on by default
 silent! call ToggleWrap()
+

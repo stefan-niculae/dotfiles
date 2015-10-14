@@ -11,15 +11,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
-NeoBundle 'bling/vim-airline'           " status line at the bottom
-NeoBundle 'tpope/vim-surround'          " surrounding with parantheses, brackets, quotes, tags etc
-NeoBundle 'scrooloose/nerdtree'         " file tree TODO learn how to use this (after learning about tabs and tmux)
-NeoBundle 'scrooloose/syntastic'        " syntax checking TODO learn how to use this
 NeoBundle 'tomtom/tcomment_vim'         " toggle comments
-NeoBundle 'ctrlpvim/ctrlp.vim'          " fuzzy file finder
-NeoBundle 'tpope/vim-fugitive'          " git integration TODO learn how to use this
-NeoBundle 'jiangmiao/auto-pairs'        " insert/delete brackets, parantheses, quotes in pairs
-NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses in different colors
+NeoBundle 'tpope/vim-surround'          " surrounding with parantheses, brackets, quotes, tags etc
 " fuzzy code completion TODO things in the vim doc
 NeoBundle 'Valloric/YouCompleteMe', {
      \ 'build'      : {
@@ -29,6 +22,15 @@ NeoBundle 'Valloric/YouCompleteMe', {
         \ 'cygwin'  : './install.py'
         \ }
      \ }
+NeoBundle 'jiangmiao/auto-pairs'        " insert/delete brackets, parantheses, quotes in pairs
+
+NeoBundle 'bling/vim-airline'           " status line at the bottom
+NeoBundle 'scrooloose/syntastic'        " syntax checking TODO learn how to use this
+NeoBundle 'scrooloose/nerdtree'         " file tree TODO learn how to use this (after learning about tabs and tmux)
+NeoBundle 'ctrlpvim/ctrlp.vim'          " fuzzy file finder
+NeoBundle 'tpope/vim-fugitive'          " git integration TODO learn how to use this
+NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses in different colors
+
 NeoBundle 'evgenyzinoviev/vim-vendetta' " color scheme
 
 call neobundle#end()
@@ -68,4 +70,10 @@ let g:ycm_complete_in_comments = 1
 " Auto Pairs
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
+
+" Airline
+" 'Straight' tabs
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+" let g:airline_theme = 'powerlineish'
 

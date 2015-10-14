@@ -28,6 +28,9 @@ better touch tool configurations!
 iterm2 themes
 .ghc/
 
+TO FIX:
+second chevron in virtualenv
+
 
 (interesting) ZSH PLUGINS:
 --from the github wiki--

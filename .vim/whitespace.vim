@@ -2,6 +2,8 @@
 " add newline to end of file on save
 " disable trailing whitespace display on current line in insert mode
 " when saving and trimming whitespace, return cursor to position before saving
+"
+
 
 " Number of spaces a tab counts for when editing
 set softtabstop=4
