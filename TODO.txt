@@ -27,9 +27,8 @@ https://blog.bertvanlangen.com/articles/toggle-hidden-files-finder-os-x-10-10-yo
 better touch tool configurations!
 iterm2 themes
 .ghc/
-
-TO FIX:
-second chevron in virtualenv
+workon <env> instead of sourcing
+make global gitignore work... globally
 
 
 (interesting) ZSH PLUGINS:

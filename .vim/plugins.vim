@@ -23,8 +23,8 @@ NeoBundle 'Valloric/YouCompleteMe', {
         \ }
      \ }
 NeoBundle 'jiangmiao/auto-pairs'        " insert/delete brackets, parantheses, quotes in pairs
-
 NeoBundle 'bling/vim-airline'           " status line at the bottom
+
 NeoBundle 'scrooloose/syntastic'        " syntax checking TODO learn how to use this
 NeoBundle 'scrooloose/nerdtree'         " file tree TODO learn how to use this (after learning about tabs and tmux)
 NeoBundle 'ctrlpvim/ctrlp.vim'          " fuzzy file finder
