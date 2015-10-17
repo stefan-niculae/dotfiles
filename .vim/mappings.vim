@@ -141,7 +141,7 @@ nnoremap <silent> <C-Down> :<C-u>call MoveLineDown()<CR>
 inoremap <silent> <C-Up> <C-o>:call MoveLineUp()<CR>
 inoremap <silent> <C-Down> <C-o>:call MoveLineDown()<CR>
 "vnoremap <silent> <C-Up> :<C-u>call MoveVisualUp()<CR>
-""vnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
+"vnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
 xnoremap <silent> <C-Up> :<C-u>call MoveVisualUp()<CR>
 xnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
 
@@ -155,11 +155,6 @@ xnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
 " F5 toggles spell checking
 nnoremap <silent> <F5> :set spell!<CR>
 
-" Leader-c toggles comments
+" FIXME make this mapping work from plugins.vim and remove it from her
 noremap <silent> <Leader>c :TComment<CR>
-
-" Leader-e shows syntastic errors
-noremap <silent> <Leader>e :Errors<CR>
-" Leader-s toogles syntastic mode
-map <Leader>s :SyntasticToggleMode<CR>
 

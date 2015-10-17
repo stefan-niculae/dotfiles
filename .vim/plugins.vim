@@ -27,10 +27,15 @@ NeoBundle 'bling/vim-airline'           " status line at the bottom
 NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses in different colors
 NeoBundle 'scrooloose/syntastic'        " syntax checking TODO learn how to use this
 
+" Unexplored plugins
+NeoBundle 'mattn/emmet-vim'
+
+" Window/tab/tmux (unexplored) plugins
 NeoBundle 'scrooloose/nerdtree'         " file tree TODO learn how to use this (after learning about tabs and tmux)
 NeoBundle 'ctrlpvim/ctrlp.vim'          " fuzzy file finder
 NeoBundle 'tpope/vim-fugitive'          " git integration TODO learn how to use this
 
+" Dependency plugins
 " vim language syntax
 NeoBundle 'syngan/vim-vimlint', {
     \ 'depends' : 'ynkdir/vim-vimlparser'
@@ -50,6 +55,12 @@ filetype plugin indent on
 
 " Get rid of default mode indicator
 set noshowmode
+
+" TComment
+" Leader-c toggles comments
+" FIXME this works in mappings.vim but not here, why?
+"noremap <silent> <Leader>c :TComment<CR>
+"noremap <silent> <M-/> :TComment<CR>
 
 " Syntastic
 " TODO only enable these if syntastic is installed (for the first time, when you before you install the plugin)
@@ -82,7 +93,7 @@ let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
 " TODO Shift-<Tab> isin't passed to vim in terminal
 " let g:ycm_key_invoke_completion = '<C-a>'
 let g:ycm_min_num_of_chars_for_completion = 1 " experimental (default is 2)
-let g:ycm_complete_in_comments = 1
+"let g:ycm_complete_in_comments = 1
 let g:ycm_show_diagnostics_ui = 0 " let syntastic handle errors
 
 " Auto Pairs
@@ -94,4 +105,10 @@ let g:AutoPairsShortcutBackInsert = '<C-b>'
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 " let g:airline_theme = 'powerlineish'
+
+" Emmet
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall " enabled only for html and css files
+let g:user_emmet_expandabbr_key = '<Leader><Tab>'
+
 
