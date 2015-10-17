@@ -53,6 +53,9 @@ fi
 # ssh
 # export ssh_key_path="~/.ssh/dsa_id"
 
+# add cabal to path
+PATH="$HOME/.cabal/bin:$PATH"
+
 # use vi as readline editor
 bindkey -v
 # set delay to 10ms between changing vim modes
@@ -96,3 +99,4 @@ source ~/.zsh/fixes.zsh
 # virtualenvwrapper activation
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+

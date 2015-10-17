@@ -16,6 +16,14 @@ install iterm2 and add preferences also change its icon to the default terminal 
 add .hushlogin
 tell user to update git (through brew) - because apple git makes reset-terminal super slow and thus the readline is unusable
 install macvim
+install cabal, ghcmod, add it to path https://github.com/scrooloose/syntastic/issues/285
+install mcs http://www.mono-project.com/docs/about-mono/supported-platforms/osx/
+npm install -g csslint
+npm install -g jshint
+npm install -g jsonlint
+gem install mdl
+gem install sqlint
+pip install vint
 
 TO ADD:
 global gitignore
