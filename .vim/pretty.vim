@@ -1,10 +1,9 @@
 " TODO
 " nicer font (bookmarks/vim/fonts)
-" nicer colorscheme (solarized dark?)
+" nicer colorscheme
 " make lowercase todo and fixme also be highlighted
-" cursor to be underscore or something more helpful
-" search highlight to be different
-" make theme compatible with semi-transparent terminal
+" cursor to be a line when in insert (with instant toggling)
+" remove 1px border on the left and right in windowed
 
 " Syntax highlighting
 syntax on
@@ -14,9 +13,7 @@ set t_Co=256
 
 " Color scheme
 set background=dark
-colorscheme vendetta
-"colorscheme solarized
-"let g:solarized_termcolors=256
+colorscheme buddy
 
 " Airline
 let g:airline_powerline_fonts = 1
@@ -26,9 +23,12 @@ set encoding=utf-8
 " Current line highlight
 set cursorline
 
-" Different color bg after 80 chars
-let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=234 guibg=#2c2d27
+" Put a line after 80 columns
+" the color should be modified in order not to clash with the colorscheme
+" let &colorcolumn=join(range(81,999),",") " this makes every column after 80
+set colorcolumn=+1
+highlight ColorColumn ctermbg=233 guibg=lightgrey
 
 " Disable all blinking
 set guicursor+=a:blinkon0
+

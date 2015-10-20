@@ -23,13 +23,9 @@ let mapleader = "\<Space>"
 nnoremap <Leader>t :NERDTreeToggle<CR>
 
 " Cursor stays in place when exiting insert into normal mode
-inoremap <Esc> <Esc>l
+" This makes the arrow keys in insert not work and insert letters instead
+inoremap <silent> <Esc> <Esc>`^
 
-" Toggle comments
-" plugin doesn't work...
-"nnoremap <C-b> <leader>c<leader>
-
-" Disable auto indentation on paste
 " doesn't work
 "command Paste execute 'set paste | insert | set nopaste'
 
@@ -136,14 +132,14 @@ function! MoveLineOrVisualUpOrDown(move_arg)
 endfunction
 
 " TODO remap these (C-directional key is no good for mac)
-nnoremap <silent> <C-Up> :<C-u>call MoveLineUp()<CR>
-nnoremap <silent> <C-Down> :<C-u>call MoveLineDown()<CR>
-inoremap <silent> <C-Up> <C-o>:call MoveLineUp()<CR>
-inoremap <silent> <C-Down> <C-o>:call MoveLineDown()<CR>
-"vnoremap <silent> <C-Up> :<C-u>call MoveVisualUp()<CR>
-"vnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
-xnoremap <silent> <C-Up> :<C-u>call MoveVisualUp()<CR>
-xnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
+" nnoremap <silent> <C-Up> :<C-u>call MoveLineUp()<CR>
+" nnoremap <silent> <C-Down> :<C-u>call MoveLineDown()<CR>
+" inoremap <silent> <C-Up> <C-o>:call MoveLineUp()<CR>
+" inoremap <silent> <C-Down> <C-o>:call MoveLineDown()<CR>
+" "vnoremap <silent> <C-Up> :<C-u>call MoveVisualUp()<CR>
+" "vnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
+" xnoremap <silent> <C-Up> :<C-u>call MoveVisualUp()<CR>
+" xnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
 
 " Shift-Enter inserts line after cursor
 " FIXME, doesn't work in console vim...

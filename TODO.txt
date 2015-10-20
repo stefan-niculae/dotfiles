@@ -37,6 +37,10 @@ iterm2 themes
 .ghc/
 workon <env> instead of sourcing
 make global gitignore work... globally
+osx tweaks:
+    this one no longer works
+    defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
+
 
 
 (interesting) ZSH PLUGINS:

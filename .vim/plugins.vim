@@ -28,7 +28,9 @@ NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses 
 NeoBundle 'scrooloose/syntastic'        " syntax checking TODO learn how to use this
 
 " Unexplored plugins
-NeoBundle 'mattn/emmet-vim'
+NeoBundle 'mattn/emmet-vim'             " html & css super-snippets
+" NeoBundle 'easymotion/vim-easymotion'   " visually jump to any word on screen
+NeoBundle 'justinmk/vim-sneak'          " jump with two characters
 
 " Window/tab/tmux (unexplored) plugins
 NeoBundle 'scrooloose/nerdtree'         " file tree TODO learn how to use this (after learning about tabs and tmux)
@@ -41,7 +43,8 @@ NeoBundle 'syngan/vim-vimlint', {
     \ 'depends' : 'ynkdir/vim-vimlparser'
     \ }
 
-NeoBundle 'evgenyzinoviev/vim-vendetta' " color scheme
+" NeoBundle 'evgenyzinoviev/vim-vendetta' " color scheme
+NeoBundle 'DrSpatula/vim-buddy'
 
 call neobundle#end()
 
@@ -75,6 +78,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 "let g:syntastic_enable_balloons = 1
 let g:syntastic_auto_loc_list = 1 " open when errors are detected, closed when none
+let g:syntastic_quiet_messages = { "level": "warnings"  } " for my haskell lab
 
 
 let g:syntastic_enable_signs = 1
@@ -97,7 +101,7 @@ let g:ycm_min_num_of_chars_for_completion = 1 " experimental (default is 2)
 let g:ycm_show_diagnostics_ui = 0 " let syntastic handle errors
 
 " Auto Pairs
-let g:AutoPairsFlyMode = 1
+let g:AutoPairsFlyMode = 0
 let g:AutoPairsShortcutBackInsert = '<C-b>'
 
 " Airline
@@ -110,5 +114,4 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall " enabled only for html and css files
 let g:user_emmet_expandabbr_key = '<Leader><Tab>'
-
 
