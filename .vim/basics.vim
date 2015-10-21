@@ -60,3 +60,8 @@ set spelllang=en_gb
 " Bigger :cmdline history
 set history=1000
 
+" Recommended line length
+" TODO set this to 132 for html
+set textwidth=80
+
+

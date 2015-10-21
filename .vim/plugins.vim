@@ -15,13 +15,13 @@ NeoBundle 'tomtom/tcomment_vim'         " toggle comments
 NeoBundle 'tpope/vim-surround'          " surrounding with parantheses, brackets, quotes, tags etc
 " fuzzy code completion TODO things in the vim doc
 NeoBundle 'Valloric/YouCompleteMe', {
-     \ 'build'      : {
+     \ 'build'   : {
         \ 'mac'     : './install.py',
         \ 'unix'    : './install.py',
         \ 'windows' : 'install.py',
         \ 'cygwin'  : './install.py'
-        \ }
      \ }
+\ }
 NeoBundle 'jiangmiao/auto-pairs'        " insert/delete brackets, parantheses, quotes in pairs
 NeoBundle 'bling/vim-airline'           " status line at the bottom
 NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses in different colors
@@ -41,7 +41,7 @@ NeoBundle 'tpope/vim-fugitive'          " git integration TODO learn how to use 
 " vim language syntax
 NeoBundle 'syngan/vim-vimlint', {
     \ 'depends' : 'ynkdir/vim-vimlparser'
-    \ }
+\ }
 
 " NeoBundle 'evgenyzinoviev/vim-vendetta' " color scheme
 NeoBundle 'DrSpatula/vim-buddy'
@@ -114,4 +114,20 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall " enabled only for html and css files
 let g:user_emmet_expandabbr_key = '<Leader><Tab>'
+
+" Sneak
+" Replace 'f' with 1-char Sneak
+nmap f <Plug>Sneak_f
+nmap F <Plug>Sneak_F
+xmap f <Plug>Sneak_f
+xmap F <Plug>Sneak_F
+omap f <Plug>Sneak_f
+omap F <Plug>Sneak_F
+" Replace 't' with 1-char Sneak
+nmap t <Plug>Sneak_t
+nmap T <Plug>Sneak_T
+xmap t <Plug>Sneak_t
+xmap T <Plug>Sneak_T
+omap t <Plug>Sneak_t
+omap T <Plug>Sneak_T
 
