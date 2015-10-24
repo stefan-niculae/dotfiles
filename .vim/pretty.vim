@@ -4,6 +4,7 @@
 " make lowercase todo and fixme also be highlighted
 " cursor to be a line when in insert (with instant toggling)
 " remove 1px border on the left and right in windowed
+" make bg color at the bottom same even if there are no lines there (start with ~)
 
 " Syntax highlighting
 syntax on

@@ -88,6 +88,7 @@ let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_javascript_checkers = ['jshint']
 "let g:syntastic_vim_checkers = ['vint']
 let g:syntastic_vim_checkers = []
+let g:syntastic_coffee_checkers = ['coffee']
 
 
 " Rainbow

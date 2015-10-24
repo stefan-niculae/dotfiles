@@ -24,6 +24,8 @@ npm install -g jsonlint
 gem install mdl
 gem install sqlint
 pip install vint
+npm install -g coffeescript
+install syntastic checkers
 
 TO ADD:
 global gitignore
