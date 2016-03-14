@@ -56,6 +56,9 @@ fi
 # add cabal to path
 PATH="$HOME/.cabal/bin:$PATH"
 
+# set android path
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 # use vi as readline editor
 bindkey -v
 # set delay to 10ms between changing vim modes

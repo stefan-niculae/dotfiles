@@ -3,8 +3,8 @@
     # editor = /usr/bin/vim
     editor = /Applications/MacVim.app/Contents/MacOS/Vim
 [user]
-    name = Stefan Niculae
-    email = stefan1niculae@gmail.com
+	name = Stefan Niculae
+	email = stefan1niculae@gmail.com
 [push]
     default = simple
 [alias]
@@ -13,3 +13,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[mergetool]
+	keepBackup = true

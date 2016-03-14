@@ -26,6 +26,7 @@ gem install sqlint
 pip install vint
 npm install -g coffeescript
 install syntastic checkers
+gulp, gulp-sass, gulp-coffee
 
 TO ADD:
 global gitignore
