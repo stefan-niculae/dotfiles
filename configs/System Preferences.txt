@@ -1,3 +1,6 @@
+OSX 10.11
+Just the non-default values
+
 System Preferences
   General
     Show scroll bars: When scrolling

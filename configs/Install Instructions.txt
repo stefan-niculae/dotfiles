@@ -8,4 +8,34 @@ Better Snap Tool
   Rename bst file to storedata
 
 OSX
-  Change settings as indicated in the OSX non-default preferences text file
+  Change settings as indicated in the system preferences file
+  Finder ([cmd] + [,] Finder in focus)
+    General
+      New Finder windows show: All My Files
+    Sidebar
+      Favorites
+        All My Files
+        Applications
+        Desktop
+        Documents
+        Downloads
+        Pictures
+        Home
+      Devices
+        Disk Name
+        External disks
+      Advanced
+        Show all filename extensions: No
+        Show warning before changing an extension: No
+        Show warning before emptying the Trash: No
+        When performing a search: Use the Previous Search Scope
+  Finder Favorites Order
+    All My Files
+    Applications
+    Desktop
+    Downloads
+    [~]Google Drive
+    [~]Projects
+    Pictures
+    Documents
+    Home
