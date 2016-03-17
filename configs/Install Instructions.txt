@@ -1,0 +1,11 @@
+Better Touch Tool
+  Open BetterTouchTool.app
+  Click [Export] on the lower left side of the app
+  Select the btt file
+
+Better Snap Tool
+  Paste the bst file into ~/Library/Application Support/BetterSnapTool/
+  Rename bst file to storedata
+
+OSX
+  Change settings as indicated in the OSX non-default preferences text file

@@ -1,0 +1,86 @@
+System Preferences
+  General
+    Show scroll bars: When scrolling
+    Ask to keep changes when closing documents: Yes
+    Recent items: 30
+
+  Desktop & Screen Saver
+    Start after: 30 Minutes
+    [~]Screensaver: Fliqlo / Airview
+
+  Dock
+    Size: ~20%
+    Magnification: Yes, ~40%
+    Minimize windows into application icon: Yes
+    [~]Automatically hide and show the Dock: Yes
+
+  Mission Control
+    Automatically rearrange Spaces based on most recent use: No
+
+  Language & Region:
+    Prefered languages: English - Primary, Romana
+    Region: Romania
+    Advanced...
+      Format language: English
+      Number separators (for numbers & currency)
+        Grouping: Space
+        Decimal: .
+
+  Notifications
+    TODO
+
+  Displays
+    Resolution: Scaled, third one
+
+  Keyboard
+    Keyboard
+      Key Repeat: Fastest
+      Modifier Keys...
+        Caps Lock -> Seil
+    Text -> iCloud
+    Shortcuts TODO, -> Better Touch Tool
+    Input Sources TODO -> Romanian US ~
+
+  Trackpad
+     Point & Click
+       Look up & data detectors: Yes (for non force-touch trackpads)
+       Tap to click: Yes
+     More Gestures
+       Swipe between full-screen apps: Swipe left or right with four fingers
+
+  Sound
+     Show volume in menu bar: Yes
+
+  iCloud
+    TODO
+
+  Internet Accounts 
+    TODO
+     
+  Bluetooth
+    Turn Bluetooth Off
+
+  Sharing
+    Remote Login: Off
+    Remote Management: Off
+
+  Users & Groups
+    Login Items
+      iTunesHelper: delete (-)
+      TODO
+
+  Date & Time
+    Clock
+      Date options
+        Show day of the week: No
+
+  Accessibility
+    Zoom TODO
+
+  Mouse & Trackpad
+    Trackpad Options...
+      Enable dragging: Yes, three finger drag
+
+
+[~] optional
+-> external source
