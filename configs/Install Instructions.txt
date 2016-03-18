@@ -39,3 +39,43 @@ OSX
     Pictures
     Documents
     Home
+
+Seil
+  Change the caps lock key to keycode 53 (Escape)
+  Apply steps described in the app for sys prefs
+
+Karabiner
+  Key Repeat
+    TODO
+
+Lightshot Screenshot
+  Capture shortcut: [alt][cmd][s]
+
+Paste
+  General
+    Launch Paste on system startup: Yes
+    Enable sound effects: No
+    History capacity: 100
+  Shortcuts
+    Activate: [shift][cmd][V]
+
+Atom
+  TODO .atom/
+  Packages
+    color-picker
+    file-icons
+    highlight-selected
+    [~]minimap
+    [~]vim-mode
+
+JetBrains
+  PyCharm Preferences
+    TODO /.Pycharm5
+
+Visual Studio Code
+  [~]TODO
+
+iTerm
+  TODO (export feature?)
+
+[~].gem .npm pip
