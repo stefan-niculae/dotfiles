@@ -2,10 +2,14 @@ Better Touch Tool
   Open BetterTouchTool.app
   Click [Export] on the lower left side of the app
   Select the btt file
+  Alternatively, copy the Better Touch Tool folder to where the path indicates
 
 Better Snap Tool
-  Paste the bst file into ~/Library/Application Support/BetterSnapTool/
-  Rename bst file to storedata
+  Copy the Better Snap Tool folder to where the path indicates
+
+Seil & Karabiner
+  Copy the two files, org.pqrs.Karabiner|Seil.plist to where the path indicates
+
 
 OSX
   Change settings as indicated in the system preferences file

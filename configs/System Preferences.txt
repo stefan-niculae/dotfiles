@@ -21,7 +21,7 @@ System Preferences
     Automatically rearrange Spaces based on most recent use: No
 
   Language & Region:
-    Prefered languages: English - Primary, Romana
+    Prefered languages: English (U.S.) - Primary, Romana
     Region: Romania
     Advanced...
       Format language: English
@@ -57,9 +57,9 @@ System Preferences
   iCloud
     TODO
 
-  Internet Accounts 
+  Internet Accounts
     TODO
-     
+
   Bluetooth
     Turn Bluetooth Off
 

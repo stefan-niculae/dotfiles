@@ -7,13 +7,16 @@
 " make bg color at the bottom same even if there are no lines there (start with ~)
 
 " Syntax highlighting
-syntax on
+" syntax on
 
 " 256 colors
 set t_Co=256
 
+syntax enable
 " Color scheme
-set background=dark
+" set background=dark
+set background=light
+" colorscheme solarized
 colorscheme buddy
 
 " Airline

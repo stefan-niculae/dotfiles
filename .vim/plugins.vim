@@ -45,6 +45,7 @@ NeoBundle 'syngan/vim-vimlint', {
 
 " NeoBundle 'evgenyzinoviev/vim-vendetta' " color scheme
 NeoBundle 'DrSpatula/vim-buddy'
+NeoBundle 'altercation/vim-colors-solarized'
 
 call neobundle#end()
 
