@@ -81,5 +81,14 @@ Visual Studio Code
 
 iTerm
   TODO (export feature?)
+  
+Bartender
+  Temporarily disable System Integrity Protection to be able to hide stubborn apps (Spotlight, McAffe) https://www.macbartender.com/B2/system-item-setup/
+  Shown items
+    Battery (no percentage)
+    Wifi
+    Time (no date)
+    Volume
+    [~]Google Drive
 
 [~].gem .npm pip
