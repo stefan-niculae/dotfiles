@@ -103,3 +103,9 @@ source ~/.zsh/fixes.zsh
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+
+# http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8
+# Pandas conflict?
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
