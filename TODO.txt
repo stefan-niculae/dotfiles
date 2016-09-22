@@ -29,6 +29,15 @@ install syntastic checkers
 gulp, gulp-sass, gulp-coffee
 
 TO ADD:
+task to check for updates every month
+```
+function f() { find . -iname "*$1*" ${@:2} }
+function r() { grep "$1" ${@:2} -R . }
+
+# Even better: use the silver searcher (brew install the_silver_searcher)
+alias f="ag -g"
+alias r=ag
+```
 global gitignore
 .aliases
 minimal_sn.zsh-theme
@@ -69,6 +78,7 @@ tmuxinator?
 vi-mode
 virtualenvwrapper
 wd
+github.com/zsh-users/zsh-syntax-highlighting
 
 https://github.com/unixorn/awesome-zsh-plugins
 prezto
