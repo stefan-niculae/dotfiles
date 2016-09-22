@@ -75,3 +75,12 @@ prezto
 antigen-hs/zgen
 alf
 fresh?
+
+
+Karabiner-Elements
+When released/documentation available/GUI done:
+  shift-escape is caps_lock
+  for mech keyboard
+    eject is expose
+  keyrepeat: delay & rate
+  
