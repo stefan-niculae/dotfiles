@@ -7,11 +7,11 @@ Better Touch Tool
 Better Snap Tool
   Copy the Better Snap Tool folder to where the path indicates
 
-Seil & Karabiner
-  Copy the two files, org.pqrs.Karabiner|Seil.plist to where the path indicates
+Karabiner-Elements
+  TODO: ~/.karabiner.d/
 
 
-OSX
+System Settings
   Change settings as indicated in the system preferences file
   Finder ([cmd] + [,] Finder in focus)
     General
@@ -38,19 +38,27 @@ OSX
     Applications
     Desktop
     Downloads
+    Documents
+    Pictures
+    Movies
     [~]Google Drive
     [~]Projects
-    Pictures
-    Documents
     Home
-
-Seil
-  Change the caps lock key to keycode 53 (Escape)
-  Apply steps described in the app for sys prefs
-
-Karabiner
-  Key Repeat
+    
+Safari
+  General
+    Safari opens with: All windows from last session
+    Open "safe" files after downloading: no
+  Search
+    Search engine: Google
+  Extensions
     TODO
+    uBlock
+    Reddit Enhancement Suite
+    Retab
+  Advanced
+    Smart Search Field: Show full website address
+    Show Develop menu in menu bar: yes
 
 Lightshot Screenshot
   Capture shortcut: [alt][cmd][s]
