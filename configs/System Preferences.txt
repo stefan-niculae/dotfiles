@@ -38,11 +38,22 @@ System Preferences
   Keyboard
     Keyboard
       Key Repeat: Fastest
-      Modifier Keys...
-        Caps Lock -> Seil
-    Text -> iCloud
-    Shortcuts TODO, -> Better Touch Tool
-    Input Sources TODO -> Romanian US ~
+    Text TODO-> iCloud
+      key symbols: ctrl, alt, cmd, shift, return, blank
+      currencies: eur, gbp
+      checkmark, cross-mark, left-chevron, right-chevron
+      emojis: ;c cry, ;d grin, ;k kiss, ;l laugh, ;p pig, ;h >:D<
+      @@ main email, ## phone nr, +## phone nr with prefix
+    Shortcuts
+      Launchpad & Dock
+        Turn Dock Hiding On/Off: alt-cmd-D
+        Show Launchpad: F13 (for mech keyboard)
+      Mission Control
+        Show Notification Center: alt-F13 (for mech keyboard)
+        Switch to Desktop 1: ctrl-1 (default)
+        Switch to Desktop 2: ctrl-2 (default)
+      Tab to move focus between: Text boxes and lists
+    Input Sources TODO -> US~Ro
 
   Trackpad
      Point & Click
