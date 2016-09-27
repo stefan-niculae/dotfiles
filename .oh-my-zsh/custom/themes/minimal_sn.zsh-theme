@@ -1,5 +1,7 @@
-# Minimal theme for zshell
-# Stefan Niculae
+# TODO make regex by sed faster
+# TODO colors for ls output
+
+# Theme by Stefan Niculae
 
 CHEVRON="❯"
 
