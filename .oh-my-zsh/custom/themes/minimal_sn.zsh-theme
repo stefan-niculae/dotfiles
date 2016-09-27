@@ -1,5 +1,6 @@
 # TODO make regex by sed faster
 # TODO colors for ls output
+# TODO virtualenv name to another chevron
 
 # Theme by Stefan Niculae
 
