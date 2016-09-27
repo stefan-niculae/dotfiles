@@ -1,7 +1,7 @@
 [core]
     # TODO set this according to current OS
     # editor = /usr/bin/vim
-    editor = /Applications/MacVim.app/Contents/MacOS/Vim
+    #editor = /Applications/MacVim.app/Contents/MacOS/Vim
 	excludesfile = /Users/Stefan/.gitignore
 [user]
 	name = Stefan Niculae

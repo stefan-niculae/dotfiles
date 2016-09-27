@@ -1,0 +1,41 @@
+alias vmr='root@10.50.213.83'
+alias vmn='niculae@10.50.213.83'
+alias hdb='niculae@sj1dra006.corp.adobe.com'
+alias txsn='sniculae@10.131.230.241'
+
+alias python=python3
+
+# Git
+alias gs='git status -s'
+
+alias ga='git add -A'
+alias gc='git commit -m'
+function gac() {
+    ga
+    gc "$1"
+}
+function gacp() {
+    ga
+    gc "$1"
+    gp
+}
+
+alias gd='git diff'
+alias gpl='git pull'
+alias gus='git rm -r --cache'  # git unstage
+function gu() {  # git undo
+    git reset "$1"
+    git checkout "$1"
+}
+
+alias gcl='git clone'
+alias gco='git checkout'
+
+# Navigation
+alias rm='rm -rf'
+alias desk='cd ~/Desktop'
+
+alias ls='ls -AFG'  # -A for displaying starting with '.' but without '.' and '..', -F for showing '/' after dir, -G for color
+alias l='ls'
+alias ll='ls -oh'  # o for extra info (like -l), -h for human readable sizes
+
