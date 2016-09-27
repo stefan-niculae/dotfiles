@@ -1,12 +1,19 @@
-alias vmr='root@10.50.213.83'
-alias vmn='niculae@10.50.213.83'
-alias hdb='niculae@sj1dra006.corp.adobe.com'
-alias txsn='sniculae@10.131.230.241'
+platform='unknown'
+unamestr=$(uname)
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   platform='mac'
+fi
 
+# Set Python 3 as default
 alias python=python3
 
+# Vim by default
+alias vi=vim
+
 # Git
-alias gs='git status -s'
+alias gs='git status -s'  # short
 
 alias ga='git add -A'
 alias gc='git commit -m'
@@ -23,7 +30,7 @@ function gacp() {
 alias gd='git diff'
 alias gpl='git pull'
 alias gus='git rm -r --cache'  # git unstage
-function gu() {  # git undo
+function gud() {  # git undo
     git reset "$1"
     git checkout "$1"
 }
@@ -34,8 +41,23 @@ alias gco='git checkout'
 # Navigation
 alias rm='rm -rf'
 alias desk='cd ~/Desktop'
+alias dl='cd ~/Downloads'
 
-alias ls='ls -AFG'  # -A for displaying starting with '.' but without '.' and '..', -F for showing '/' after dir, -G for color
-alias l='ls'
-alias ll='ls -oh'  # o for extra info (like -l), -h for human readable sizes
+alias mkdir='mkdir -p'
+
+if [[ $platform == 'linux' ]]; then
+   alias ls='ls -a --color=auto'
+elif [[ $platform == 'mac' ]]; then
+    alias ls='ls -AFG'
+    # -A for displaying starting with '.' but without '.' and '..', -F for showing '/' after dir, -G for color
+    alias l='ls'
+    # o for extra info (like -l), -h for human readable sizes
+    alias ll='ls -oh'
+fi
+
+# Searching
+alias grep='grep --line-number --recursive --color=auto'
+
+# Force empty trash on mac
+alias et='rm -rf ~/.Trash'
 
