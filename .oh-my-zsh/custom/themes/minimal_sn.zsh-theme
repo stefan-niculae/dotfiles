@@ -1,7 +1,7 @@
 # Minimal theme for zshell
 # Stefan Niculae
 
-PROMPT_CHAR="❯"
+CHEVRON="❯"
 
 # Colors
 eval GRAY_COLOR='$FG[240]'
@@ -26,7 +26,7 @@ function prompt_vimode(){
       ;;
   esac
 
-  ret+="$PROMPT_CHAR$RSC"
+  ret+="$CHEVRON$RSC"
   echo "$ret"
 }
 
@@ -39,25 +39,26 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 zle -N zle-line-finish
 
-PROMPT='$(prompt_vimode) '
+#PROMPT='$(prompt_vimode) '
+PROMPT="$GREEN_BOLD$CHEVRON$RSC "
 
 
 # Right prompt
-function prompt_path() {
+function current_path() {
   local slash="$RSC/$GRAY_COLOR"
-  local ellipsis="${RSC}..${GRAY_COLOR}"
+  local ellipsis="${RSC}\.\.${GRAY_COLOR}"
 
-  echo "$GRAY_COLOR$(print -P %3~ | sed s:'\([^/]\{4\}\)[^/]\{3,\}\([^/]\{4\}\)':\\1${RSC}\.\.${GRAY_COLOR}\\2:g | sed s:/:${slash}:g)$RSC"
+  echo "$GRAY_COLOR$(print -P %4~ | sed s:'\([^/]\{8\}\)[^/]\{2,\}\([^/]\{8\}\)':\\1${ellipsis}\\2:g | sed s:/:${slash}:g)$RSC"
 }
 
 # Git info
 ZSH_THEME_GIT_PROMPT_PREFIX=""
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_DIRTY="✹" #✭
-ZSH_THEME_GIT_PROMPT_CLEAN=" "
+ZSH_THEME_GIT_PROMPT_CLEAN=""
 
-function prompt_git() {
+function git_status() {
   echo "$BLUE_COLOR$(git_prompt_info)$RSC"
 }
 
-RPROMPT='$(prompt_path) $(prompt_git)'
+RPROMPT='$(current_path) $(git_status)'
