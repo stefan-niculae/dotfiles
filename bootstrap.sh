@@ -64,6 +64,8 @@ symlink_dotfiles() {
             log info "Skipped $name"
             continue
         fi
+        # TODO don't override the whole .oh-my-zsh if only .oh-my-zsh/custom/themes/minimal_sn.zsh-theme is required
+        # TODO don't copy .zshrc because the first line is computer dependent - eg: ZSHRC=/Users/<name>...
 
         # If the file already exists at the destination
         if [[ -e "$HOME/$name" ]]; then
@@ -71,7 +73,7 @@ symlink_dotfiles() {
             log info "Backed up $name in $BACKUP_DIR"
             mv "$HOME/$name" "$BACKUP_DIR/$name"
         fi
-	
+
         log succ "Symlinking $name to $HOME"
         ln -s "$PWD/$entry" "$HOME/$name"
     done
