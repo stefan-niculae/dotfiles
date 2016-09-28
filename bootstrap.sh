@@ -8,7 +8,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m'
 
 ### Configs
-IGNORED_FILES="bootstrap.sh .git README.md"  # TODO add configs, etc
+IGNORED_FILES=".git"  # folders not starting with a dot are ignored by default
 BACKUP_DIR=~/dotfiles_backup
 APPS="iterm2"  # TODO other apps http://sourabhbajaj.com/mac-setup/Homebrew/Cask.html
 
@@ -20,7 +20,7 @@ log() {
         succ)  color=$GREEN;;
         *)     color=$NC;;
     esac
-    echo "${color}$2${NC}"
+    printf "${color}$2${NC}\n"
 }
 
 
@@ -41,36 +41,39 @@ create_backup_dir() {
     backup_dir_created=true
 
     # If the backup directory already exists
-    if [ -e $BACKUP_DIR ]; then
+    if [[ -e $BACKUP_DIR ]]; then
         log error "'$BACKUP_DIR' already exists, aborting."
         exit
     fi
 
-    log succ "Creating backup directory: '$BACKUP_DIR'"
+    log info "Creating backup directory: '$BACKUP_DIR'"
     mkdir $BACKUP_DIR
 }
 
 
 symlink_dotfiles() {
-    log info "Symlinking dotfiles"
-    source_dir=$(dirname $0)  # folder of script
+    log info "Symlinking dotfiles from from $PWD"
 
     # Iterate over files and directory in the source dir
-    for entry in $source_dir/*; do
+    for entry in .*; do
         name=$(basename $entry)
-        if is_ignored $name; then
+        if [ "$name" = "." -o "$name" = ".." -o "$name" = ".DS_Store" ]; then
+            continue
+        fi
+        if is_ignored "$name"; then
+            log info "Skipped $name"
             continue
         fi
 
         # If the file already exists at the destination
-        if [ -e ~/$name ]; then
-            log info "Backing up $name in $BACKUP_DIR"
+        if [[ -e "$HOME/$name" ]]; then
             create_backup_dir
-            mv ~/$name "$BACKUP_DIR/$name"
+            log info "Backed up $name in $BACKUP_DIR"
+            mv "$HOME/$name" "$BACKUP_DIR/$name"
         fi
-
-        log succ "Symlinking $name in home"
-        ln -s $entry ~/$name
+	
+        log succ "Symlinking $name to $HOME"
+        ln -s "$PWD/$entry" "$HOME/$name"
     done
 }
 
@@ -101,8 +104,8 @@ install_casks() {
 
 #install_xcode
 #install_homebrew
-#symlink_dotfiles
-install_casks
+symlink_dotfiles
+#install_casks
 # TODO continue from http://sourabhbajaj.com/mac-setup/iTerm/README.html
 # TODO install neovim from homebrew https://github.com/neovim/homebrew-neovim/blob/master/README.md and install its rc's
 
