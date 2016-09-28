@@ -15,12 +15,12 @@ APPS="iterm2"  # TODO other apps http://sourabhbajaj.com/mac-setup/Homebrew/Cask
 log() {
     color=''
     case $1 in
-        "info") color=$BLUE;;
-        "error") color=$RED;;
-        "succ") color=$GREEN;;
-        *) color=$NC;;
+        info)  color=$BLUE;;
+        error) color=$RED;;
+        succ)  color=$GREEN;;
+        *)     color=$NC;;
     esac
-    printf "${color}$2${NC}\n"
+    echo "${color}$2${NC}"
 }
 
 
