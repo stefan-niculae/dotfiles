@@ -17,7 +17,7 @@ syntax enable
 " set background=dark
 set background=light
 " colorscheme solarized
-colorscheme buddy
+"colorscheme buddy
 
 " Airline
 let g:airline_powerline_fonts = 1

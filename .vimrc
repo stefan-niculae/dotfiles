@@ -3,7 +3,7 @@
 set nocompatible
 
 " Keep configs separated in files
-runtime plugins.vim
+"runtime plugins.vim
 runtime basics.vim
 runtime mappings.vim
 runtime pretty.vim
