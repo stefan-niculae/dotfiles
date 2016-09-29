@@ -61,3 +61,24 @@ alias grep='grep --line-number --recursive --color=auto'
 # Force empty trash on mac
 alias et='rm -rf ~/.Trash'
 
+
+toggle_hidden_files() {
+    prop="com.apple.finder AppleShowAllFiles"
+
+    # In zsh, ${=var} counts spaces as separators, not as characters
+    # so `nr_args(){ echo $# }; three_words="aa bb cc"; nr_args ${=three_words}` is 3,
+    # while `nr_args $three_words` is 1 (the three words are considered enclosed in quotes)
+
+    if [ `defaults read ${=prop}` = "NO" ]
+        then
+            defaults write ${=prop} YES
+            echo Hidden files are SHOWN
+        else
+            defaults write ${=prop} NO
+            echo Hidden files are HIDDEN
+    fi
+
+    killall Finder /System/Library/CoreServices/Finder  # restart Finder
+}
+alias thf=toggle_hidden_files
+

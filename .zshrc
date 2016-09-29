@@ -1,3 +1,4 @@
+# TODO make zsh autocomplete .dotfiles too when tab-ing after vi for example
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Stefan/.oh-my-zsh
 

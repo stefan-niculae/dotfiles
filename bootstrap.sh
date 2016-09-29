@@ -110,4 +110,5 @@ symlink_dotfiles
 #install_casks
 # TODO continue from http://sourabhbajaj.com/mac-setup/iTerm/README.html
 # TODO install neovim from homebrew https://github.com/neovim/homebrew-neovim/blob/master/README.md and install its rc's
+# TODO install vim for mac via brew install macvim --with-override-system-vim and brew link --overwrite macvim and brew linkapps macvim
 
