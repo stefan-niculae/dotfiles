@@ -54,14 +54,8 @@ fi
 # ssh
 # export ssh_key_path="~/.ssh/dsa_id"
 
-# add cabal to path
-PATH="$HOME/.cabal/bin:$PATH"
-
-# set android path
-export ANDROID_HOME=/usr/local/opt/android-sdk
-
 # use vi as readline editor
-bindkey -v
+#bindkey -v
 # set delay to 10ms between changing vim modes
 # FIXME it seems like it is not updating at all on time
 export KEYTIMEOUT=10
@@ -99,14 +93,3 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 source ~/.aliases
 alias -s conf='$editor'
 source ~/.zsh/fixes.zsh
-
-# virtualenvwrapper activation
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-
-
-# http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8
-# Pandas conflict?
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
