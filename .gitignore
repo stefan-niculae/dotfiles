@@ -8,3 +8,8 @@ NeoBundle.lock
 # Mac
 .DS_Store
 
+# JetBrains IDEs
+.idea
+
+# Python compiled
+*.pyc
