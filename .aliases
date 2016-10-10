@@ -1,3 +1,5 @@
+# Useful command: unalias <expr>
+
 platform='unknown'
 unamestr=$(uname)
 if [[ "$unamestr" == 'Linux' ]]; then
@@ -56,7 +58,19 @@ elif [[ $platform == 'mac' ]]; then
 fi
 
 # Searching
-alias grep='grep --line-number --recursive --color=auto'
+# useful arguments (from mac's `man grep`):
+#  -i | --ignore-case         case insnsitive
+#  -R | -r | --recursive      search in subfolders
+#  -S                         when --recursive is specified, follow symlinks
+#  -F | --fixed-strings       interpret pattern as fixed string
+#  -v --invert-match          return only non-matches
+#  -w | --word-regexp         match only surrounded by whitespace
+#  -C<num> | --context=<num>  lines before and after match
+#  -n | --line-number         show line number for each match
+#  -c | --count               only show count
+#  -e <re> | --regexp=<re>    additional regex to search (can start with a dash)
+#  -I                         ignore binary files
+alias grep='grep --color=auto'
 
 # Force empty trash on mac
 alias et='rm -rf ~/.Trash'
@@ -81,4 +95,11 @@ toggle_hidden_files() {
     killall Finder /System/Library/CoreServices/Finder  # restart Finder
 }
 alias thf=toggle_hidden_files
+
+# http://stackoverflow.com/a/13322549/5769984
+if [[ $platform == 'linux' ]]; then
+    alias local_ip="hostname --ip-address"
+elif [[ $platform == 'mac' ]]; then
+    alias local_ip="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+fi
 
