@@ -94,3 +94,4 @@ When released/documentation available/GUI done:
     eject is expose
   keyrepeat: delay & rate
   
+bootstrap todo: git config --global core.excludesfile ~/.gitignore
