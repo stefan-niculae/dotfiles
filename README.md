@@ -8,7 +8,7 @@ The setup is tailored for a macOS system (tested on `10.11` and `10.12`). The go
 
 ## Installation
 
-1. Clone this repo to a convenient location (the examples use `~/dotfiles`):
+Clone this repo to a convenient location (the examples use `~/dotfiles`):
 
 ```bash
 cd ~
@@ -17,7 +17,7 @@ git clone git@github.com:stefan1niculae/dotfiles.git # or SSH version (if you co
 # or just download the zip from github.com/stefan1niculae/dotfiles
 ```
 
-2. Run the bootstrapping script in the root:
+Run the bootstrapping script in the root:
 
 ```bash
 cd ~/dotfiles
