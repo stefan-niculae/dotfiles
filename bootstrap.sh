@@ -8,7 +8,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m'
 
 ### Configs
-IGNORED_FILES=".git"  # folders not starting with a dot are ignored by default
+IGNORED_FILES=". .. .git .DS_Store"  # folders not starting with a dot are ignored by default
 BACKUP_DIR=~/dotfiles_backup
 APPS="iterm2"  # TODO other apps http://sourabhbajaj.com/mac-setup/Homebrew/Cask.html
 
@@ -57,9 +57,6 @@ symlink_dotfiles() {
     # Iterate over files and directory in the source dir
     for entry in .*; do
         name=$(basename $entry)
-        if [ "$name" = "." -o "$name" = ".." -o "$name" = ".DS_Store" ]; then
-            continue
-        fi
         if is_ignored "$name"; then
             log info "Skipped $name"
             continue
@@ -92,7 +89,7 @@ install_homebrew() {
     # TODO make job that asks to update homebrew (and other package managers) every week
     log info "Installing the Homebrew package manager"
     # TODO test this on clean
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew doctor
 }
 
@@ -104,10 +101,11 @@ install_casks() {
     done
 }
 
+symlink_dotfiles
 #install_xcode
 #install_homebrew
-symlink_dotfiles
 #install_casks
+
 # TODO continue from http://sourabhbajaj.com/mac-setup/iTerm/README.html
 # TODO install neovim from homebrew https://github.com/neovim/homebrew-neovim/blob/master/README.md and install its rc's
 # TODO install vim for mac via brew install macvim --with-override-system-vim and brew link --overwrite macvim and brew linkapps macvim

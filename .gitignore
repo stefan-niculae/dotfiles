@@ -1,9 +1,7 @@
-# Vim temporary files
-*~
-*.swp
-*.swo
-NeoBundle.lock
-**/.vim/bundle
+# Vim
+*.swp  # temporary files
+NeoBundle.lock  # plugins
+**/.vim/bundle  # downloaded plugins
 
 # Mac
 .DS_Store
@@ -11,8 +9,12 @@ NeoBundle.lock
 # JetBrains IDEs
 .idea
 
-# Python compiled
+# Compiled Python files
 *.pyc
 
+# Sass cache
 .sass_cache
+
+# NPM debug logs
 npm-debug.log
+
