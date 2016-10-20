@@ -13,3 +13,6 @@ NeoBundle.lock
 
 # Python compiled
 *.pyc
+
+.sass_cache
+npm-debug.log

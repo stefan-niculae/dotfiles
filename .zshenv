@@ -2,11 +2,6 @@
 # Uncomment as needed
 
 
-# Python - virtual env wrapper
-export WORKON_HOME=$HOME/.virtualenvs
-#export VIRTUALENV_PYTHON=`which python3`  # use python 3
-#export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-source /usr/local/bin/virtualenvwrapper.sh
 
 # Python - locale conflict
 # http://stackoverflow.com/questions/19961239/pelican-3-3-pelican-quickstart-error-valueerror-unknown-locale-utf-8
@@ -24,7 +19,7 @@ export PATH=$HOME/.local/bin:${PATH}  # stack
 #export LD_LIBRARY_PATH=/Developer/NVIDIA/
 
 # Java
-export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Android
 #export ANDROID_HOME=/usr/local/opt/android-sdk

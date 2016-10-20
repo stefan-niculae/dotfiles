@@ -92,4 +92,4 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # load aliases
 source ~/.aliases
 alias -s conf='$editor'
-source ~/.zsh/fixes.zsh
+#source ~/.zsh/fixes.zsh
