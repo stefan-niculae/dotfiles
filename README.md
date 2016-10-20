@@ -55,7 +55,7 @@ Configs for:
 
 * TODO: other programs
 
-  ​
+
 
 
 
@@ -65,7 +65,7 @@ GUI applications:
 
 * TODO: other apps
 
-  ​
+
 
 
 
@@ -85,7 +85,7 @@ The setup reflects my usual toolchain:
 
 * TODO: other areas
 
-  ​
+
 
 ## TODO
 
@@ -173,7 +173,7 @@ As you can tell, the project is WIP — the scripts and readme are riddled with 
   * general — `thf`, `et`, etc
   * coming from zsh — `...`, etc
 
-  ​
+
 
 
 ### Updater
@@ -197,7 +197,6 @@ Interesting plugins to try (from the github wiki):
 * cabal?
 * chucknorris
 * coffee?
-
 * common-aliases
 * dirhistory/dircycle
 * fasd
@@ -216,8 +215,6 @@ Interesting plugins to try (from the github wiki):
 * virtualenvwrapper
 * wd
 * github.com/zsh-users/zsh-syntax-highlighting
-
-
 * https://github.com/unixorn/awesome-zsh-plugins
 * prezto
 * antigen-hs/zgen
