@@ -87,6 +87,7 @@ The setup reflects my usual toolchain:
 
 
 
+
 ## TODO
 
 As you can tell, the project is WIP — the scripts and readme are riddled with TODOs.
@@ -115,6 +116,9 @@ As you can tell, the project is WIP — the scripts and readme are riddled with 
   * toggle hidden files (something like [this](https://blog.bertvanlangen.com/articles/toggle-hidden-files-finder-os-x-10-10-yosemite/)?)
 * BTT configs
 * Karabiner-Elements
+* Atom packages:
+  * file-icons
+  * highlight-selected
 
 
 
