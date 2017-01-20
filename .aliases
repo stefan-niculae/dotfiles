@@ -103,3 +103,10 @@ elif [[ $platform == 'mac' ]]; then
     alias local_ip="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
 fi
 
+alias pro='/usr/local/sicstus4.3.5/bin/sicstus --noinfo --nologo -l'
+
+change_extension() {
+  for f in *.@0; do
+    mv -- "$f" "${f%.@0}.@1"
+  done
+}
