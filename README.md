@@ -119,6 +119,14 @@ As you can tell, the project is WIP — the scripts and readme are riddled with 
 * Atom packages:
   * file-icons
   * highlight-selected
+* Quick Look Plugins (`brew cask install <plugin-name>`):
+  * Code `qlcolorcode`
+  * Markdown `qlmarkdown`
+  * JSON `quicklook-json`
+  * Archives `betterzipql`
+  * Text files without extension `qlstephen`
+  * Image Size? `qlimagesize`
+  * Videos `qlvideo`
 
 
 

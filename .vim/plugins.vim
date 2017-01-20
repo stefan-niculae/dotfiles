@@ -14,14 +14,14 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'tomtom/tcomment_vim'         " toggle comments
 NeoBundle 'tpope/vim-surround'          " surrounding with parantheses, brackets, quotes, tags etc
 " fuzzy code completion TODO things in the vim doc
-NeoBundle 'Valloric/YouCompleteMe', {
-     \ 'build'   : {
-        \ 'mac'     : './install.py',
-        \ 'unix'    : './install.py',
-        \ 'windows' : 'install.py',
-        \ 'cygwin'  : './install.py'
-     \ }
-\ }
+"NeoBundle 'Valloric/YouCompleteMe', {
+"     \ 'build'   : {
+"        \ 'mac'     : './install.py',
+"        \ 'unix'    : './install.py',
+"        \ 'windows' : 'install.py',
+"        \ 'cygwin'  : './install.py'
+"     \ }
+"\ }
 NeoBundle 'jiangmiao/auto-pairs'        " insert/delete brackets, parantheses, quotes in pairs
 NeoBundle 'bling/vim-airline'           " status line at the bottom
 NeoBundle 'luochen1990/rainbow'         " color different levels of parantheses in different colors
@@ -132,4 +132,3 @@ xmap t <Plug>Sneak_t
 xmap T <Plug>Sneak_T
 omap t <Plug>Sneak_t
 omap T <Plug>Sneak_T
-
