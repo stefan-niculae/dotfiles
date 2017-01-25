@@ -2,7 +2,7 @@
     # TODO set this according to current OS
     # editor = /usr/bin/vim
     #editor = /Applications/MacVim.app/Contents/MacOS/Vim
-	excludesfile = /Users/labuser/.gitignore
+	excludesfile = ~/.gitignore
 [user]
 	name = Stefan Niculae
 	email = stefan1niculae@gmail.com
