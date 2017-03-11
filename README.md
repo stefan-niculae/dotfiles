@@ -127,6 +127,7 @@ As you can tell, the project is WIP — the scripts and readme are riddled with 
   * Text files without extension `qlstephen`
   * Image Size? `qlimagesize`
   * Videos `qlvideo`
+  * pip: `pip install ipython virtualenvwrapper`
 
 
 
