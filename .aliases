@@ -10,6 +10,7 @@ fi
 
 # Set Python 3 as default
 alias python=python3
+alias pip=pip3
 
 # Vim by default
 alias vi=vim
