@@ -23,3 +23,9 @@ export PATH=$HOME/.local/bin:${PATH}  # stack
 
 # Android
 #export ANDROID_HOME=/usr/local/opt/android-sdk
+
+
+# Python virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper_lazy.sh  # lazy loading
