@@ -128,6 +128,7 @@ As you can tell, the project is WIP — the scripts and readme are riddled with 
   * Image Size? `qlimagesize`
   * Videos `qlvideo`
   * pip: `pip install ipython virtualenvwrapper`
+  * notebooks: https://github.com/tuxu/nbviewer-app
 
 
 
